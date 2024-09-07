@@ -521,7 +521,9 @@ function clickCircles() {
       handleIndexes();
       addActiveState();
       clearInterval(_variables__WEBPACK_IMPORTED_MODULE_0__.getAnimationID.animationID);
-      _variables__WEBPACK_IMPORTED_MODULE_0__.getAnimationID.animationID = setInterval(slideRight, 3000);
+      if (_variables__WEBPACK_IMPORTED_MODULE_0__.sliderPlayBtn.currentPlayBtn.classList.contains("pause-btn--active")) {
+        _variables__WEBPACK_IMPORTED_MODULE_0__.getAnimationID.animationID = setInterval(slideRight, 3000);
+      }
     }
   });
   _variables__WEBPACK_IMPORTED_MODULE_0__.circleNav.currentCircleNav.addEventListener("keydown", e => {
@@ -530,6 +532,9 @@ function clickCircles() {
       clearActiveState();
       handleIndexes();
       addActiveState();
+      if (_variables__WEBPACK_IMPORTED_MODULE_0__.sliderPlayBtn.currentPlayBtn.classList.contains("pause-btn--active")) {
+        _variables__WEBPACK_IMPORTED_MODULE_0__.getAnimationID.animationID = setInterval(slideRight, 3000);
+      }
     }
   });
 }
@@ -540,13 +545,17 @@ function arrowCtrl() {
       console.log("right");
       slideRight();
       clearInterval(_variables__WEBPACK_IMPORTED_MODULE_0__.getAnimationID.animationID);
-      _variables__WEBPACK_IMPORTED_MODULE_0__.getAnimationID.animationID = setInterval(slideRight, 3000);
+      if (_variables__WEBPACK_IMPORTED_MODULE_0__.sliderPlayBtn.currentPlayBtn.classList.contains("pause-btn--active")) {
+        _variables__WEBPACK_IMPORTED_MODULE_0__.getAnimationID.animationID = setInterval(slideRight, 3000);
+      }
     }
     if (e.target === _variables__WEBPACK_IMPORTED_MODULE_0__.getLeftArrow.leftArrow || e.target === _variables__WEBPACK_IMPORTED_MODULE_0__.getLeftArrowIcon.leftArrowIcon) {
       console.log("left");
       slideLeft();
       clearInterval(_variables__WEBPACK_IMPORTED_MODULE_0__.getAnimationID.animationID);
-      _variables__WEBPACK_IMPORTED_MODULE_0__.getAnimationID.animationID = setInterval(slideRight, 3000);
+      if (_variables__WEBPACK_IMPORTED_MODULE_0__.sliderPlayBtn.currentPlayBtn.classList.contains("pause-btn--active")) {
+        _variables__WEBPACK_IMPORTED_MODULE_0__.getAnimationID.animationID = setInterval(slideRight, 3000);
+      }
     }
   });
   _variables__WEBPACK_IMPORTED_MODULE_0__.activeSliderBox.currentActiveBox.addEventListener("keydown", e => {
@@ -1106,4 +1115,4 @@ document.addEventListener("DOMContentLoaded", e => {
 });
 /******/ })()
 ;
-//# sourceMappingURL=index.2f83235e.js.map
+//# sourceMappingURL=index.d55bf16c.js.map
