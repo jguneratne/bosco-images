@@ -543,7 +543,9 @@ li {
 }
 
 .photo-box picture {
-  transition: visibility 0s 500ms, opacity 500ms linear;
+  transition:
+    visibility 0s 500ms,
+    opacity 500ms linear;
   display: none;
   opacity: 0;
   pointer-events: none;
@@ -1301,4 +1303,4 @@ textarea::placeholder {
   }
 }
 
-/*# sourceMappingURL=style.6bd7f29e.css.map*/
+/*# sourceMappingURL=style.6a6030da.css.map*/
