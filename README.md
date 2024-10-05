@@ -8,6 +8,10 @@ Begin Redesign: July 13th, 2024
 
 Rename Repo Date: July 17th, 2024
 
-Final Publish Date: July 19th, 2024
+Second Publish Date: July 19th, 2024
 
 Split configuration into dev and prod modes: Sept. 12th, 2024
+
+Reconfigure galleries and change picture element for img elements: Sept 12th, 2024
+
+Third Publish Date: Oct 4th, 2024
