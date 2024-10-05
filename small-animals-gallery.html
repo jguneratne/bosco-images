@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width" />
     <!-- Removed initial-scale and max-width from content attribute to fix zooming problems on mobile -->
     <title>Bosco Images Wildlife Photography: Small Animals Gallery</title>
-    <link href="css/style.6a6030da.css" rel="stylesheet" integrity="sha384-oex9XMgaSzA39Bof7TOOfrnFjhsSaNLYjAuQVCaw9G66ZkjNmnwfUmS5cGGVH2J6" crossorigin="anonymous">
-    <script src="js/menu-index.f8b4d405.js" defer="defer" integrity="sha384-rp9ghluGStRY3hL1OjCeTifEXEgHZ+NKZKZzgZ4jSf8oCdCMPmp5vex7+coF7os2" crossorigin="anonymous"></script>
-    <script src="js/gallery-index.28919ac7.js" defer="defer" integrity="sha384-/LufYlpqAocP7z0x530pVQYSAbF5pDSNL0QcCsxLPZKsb4lji7gsd0x8clcl54tg" crossorigin="anonymous"></script>
+    <link href="styles/body-styles.5567702d.css" rel="stylesheet" />
+    <link href="styles/slider-styles.e07c61e8.css" rel="stylesheet" />
+    <script src="js/menu-index.2ac22860.js" defer="defer"></script>
+    <script src="js/footerDate.e96c2161.js" defer="defer"></script>
+    <script src="js/gallery-index.e69562ff.js" defer="defer"></script>
   </head>
 
   <body>
@@ -18,7 +20,7 @@
     <button class="menu-icon-div">
       <img
         class="menu-icon"
-        src="images/icons/menu-symbol-of-three-parallel-lines-svgrepo-com.b45ba31c.svg"
+        src="imgs/icons/menu-symbol-of-three-parallel-lines-svgrepo-com.b45ba31c.svg"
         alt="Menu Button: Click to expand menu options"
       />
     </button>
@@ -77,6 +79,30 @@
               >Small Animals</a
             >
           </li>
+
+          <li
+            role="menuitem"
+            class="dropdown-item"
+            style="--delay: 4"
+            data-name="pond-life-gallery"
+          >
+            <a aria-label="Urban Animals Gallery" href="pond-life-gallery.html"
+              >Pond Life</a
+            >
+          </li>
+
+          <li
+            role="menuitem"
+            class="dropdown-item"
+            style="--delay: 5"
+            data-name="urban-animals-gallery"
+          >
+            <a
+              aria-label="Urban Animals Gallery"
+              href="urban-animals-gallery.html"
+              >Urban Animals</a
+            >
+          </li>
         </ul>
       </li>
 
@@ -104,312 +130,301 @@
 </header>
 
         <!-- SMALL ANIMALS GALLERY -->
-        <section class="section gal-portrait" id="small-animals-gallery" hidden>
-          <div class="gallery portrait-gallery">
-            <div class="animation-ctrl-div portrait-animation-ctrl-div">
+        <section class="section" id="small-animals-gallery">
+          <div class="gallery">
+            <div
+              class="slider-box slider-box"
+              tabindex="0"
+              role="region"
+              aria-roledescription="photo slider"
+              aria-label="Small Animals Gallery"
+            >
+              <div class="animation-ctrl-div">
   <button
     type="button"
-    class="pause-btn portrait-pause-btn"
+    class="pause-btn"
     title="Press Enter or Space to Pause Gallery Animation"
   >
     <img
-      class="pause-icon portrait-pause-icon"
-      src="images/icons/pause-btn.ff0eedcb.svg"
+      class="pause-icon"
+      src="imgs/icons/pause-btn.52c970cb.svg"
       alt="Press Enter or Space to Pause Gallery Animation"
     />
   </button>
 
   <button
     type="button"
-    class="play-btn portrait-play-btn"
+    class="play-btn"
     title="Press Enter or Space to Start Gallery Animation"
   >
     <img
-      class="play-icon portrait-play-icon"
-      src="images/icons/play-btn.75224a2a.svg"
+      class="play-icon"
+      src="imgs/icons/play-btn.c0c34713.svg"
       title="Start Gallery Animation"
       alt="Press Enter or Space to Start Gallery Animation"
     />
   </button>
 </div>
 
+              <button type="button" class="back-arrow" data-back-arrow>
+                <img
+                  data-icon-back
+                  class="arrow"
+                  src="imgs/icons/reshot-icon-arrow-chevron-left-975UQXVKZF.066aee6a.svg"
+                  alt="Back Arrow"
+                />
+              </button>
 
-            <div
-              class="slider-box portrait-slider-box"
-              tabindex="0"
-              role="region"
-              aria-roledescription="photo slider"
-              aria-label="Small Animals Gallery"
-              hidden
-            >
-              <div class="img-display-container">
-                <button type="button" class="back-arrow" data-back-arrow>
-                  <img
-                    data-icon-back
-                    class="arrow"
-                    src="images/icons/reshot-icon-arrow-chevron-left-975UQXVKZF.066aee6a.svg"
-                    alt="Back Arrow"
-                  />
-                </button>
+              <div class="photo-box">
+                <!-- BUNNY EATING GRASS -->
+                <img
+                  loading="lazy"
+                  src="imgs/small-animals-gal/jpg/Guneratne_2023.06.28_bunny-grass-horizontal-500w.5a000364.jpg"
+                  alt="Slide 1 of 15: The side view of a rabbit, facing to the left of the frame with a long piece of grass in its mouth."
+                  class="picture"
+                  tabindex="0"
+                  id="slide1"
+                  srcset="
+                    imgs/small-animals-gal/avif/Guneratne_2023.06.28_bunny-grass-horizontal-300w.39a4c392.avif   300w,
+                    imgs/small-animals-gal/avif/Guneratne_2023.06.28_bunny-grass-horizontal-500w.5bde4931.avif   500w,
+                    imgs/small-animals-gal/avif/Guneratne_2023.06.28_bunny-grass-horizontal-750w.3984520b.avif   750w,
+                    imgs/small-animals-gal/avif/Guneratne_2023.06.28_bunny-grass-horizontal-2000w.bd7a9220.avif 2000w
+                  "
+                />
 
-                <div class="photo-box portrait-photo-box">
-                  <!-- BUNNY EATING GRASS -->
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 300px) and (max-width: 499px) and (orientation: portrait)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2023.06.28_bunny-grass-vertical-250p.2f6bb7df.jpg                      "
-                    />
+                <!-- SQUIRREL IN TREE -->
+                <img
+                  loading="lazy"
+                  src="imgs/small-animals-gal/jpg/Guneratne_2024.05.03_squirrel-tree-horizontal-500w.8efec19d.jpg"
+                  alt="Slide 2 of 15: A squirrel climbing a thin branch of a cherry tree that has young leaves and spring buds. The squirrel is partially hidden behind the leaves, holding onto one of them, with its face peering over the leaf at the viewer."
+                  class="picture"
+                  tabindex="0"
+                  id="slide2"
+                  srcset="
+                    imgs/small-animals-gal/avif/Guneratne_2024.05.03_squirrel-tree-horizontal-300w.7ad6961c.avif   300w,
+                    imgs/small-animals-gal/avif/Guneratne_2024.05.03_squirrel-tree-horizontal-500w.4e83b696.avif   500w,
+                    imgs/small-animals-gal/avif/Guneratne_2024.05.03_squirrel-tree-horizontal-750w.9a33cce9.avif   750w,
+                    imgs/small-animals-gal/avif/Guneratne_2024.05.03_squirrel-tree-horizontal-2000w.119ec723.avif 2000w
+                  "
+                />
 
-                    <source
-                      media="(min-width: 500px) and (max-width: 750px) and (orientation: portrait)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2023.06.28_bunny-grass-vertical-420p.07796afe.jpg                      "
-                    />
+                <!-- CHIPMUNK EATING -->
+                <img
+                  loading="lazy"
+                  src="imgs/small-animals-gal/jpg/Guneratne_2024.05.24_chippy-eating-horizontal-500w.ace42a74.jpg"
+                  alt="Slide 3 of 15: A chipmunk in the center of the frame facing left, standing on its hind legs with its hands up to its mouth as it eats something. There are white stones on the ground in front of the chipmunk and the broun ground of the woods is out of focus behind it."
+                  class="picture"
+                  tabindex="0"
+                  id="slide3"
+                  srcset="
+                    imgs/small-animals-gal/avif/Guneratne_2024.05.24_chippy-eating-horizontal-300w.c910cf2a.avif   300w,
+                    imgs/small-animals-gal/avif/Guneratne_2024.05.24_chippy-eating-horizontal-500w.f1ab7fe5.avif   500w,
+                    imgs/small-animals-gal/avif/Guneratne_2024.05.24_chippy-eating-horizontal-750w.3319e2ba.avif   750w,
+                    imgs/small-animals-gal/avif/Guneratne_2024.05.24_chippy-eating-horizontal-2000w.9bf303ee.avif 2000w
+                  "
+                />
 
-                    <source
-                      media="(min-width: 751px) and (max-width: 1020px) and (orientation: portrait)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2023.06.28_bunny-grass-vertical-600p.cbb18bd8.jpg                      "
-                    />
+                <!-- BUNNY ON SLOPE -->
+                <img
+                  loading="lazy"
+                  src="imgs/small-animals-gal/jpg/Guneratne_2023.07.30_bunny-slope-vertical-400w.d3a8ffaf.jpg"
+                  alt="Slide 4 of 15: A rabbit sits on a slope of grass that is entering the frame diagonally from the left toward the bottom right of the frame. The rabbit is facing up the slope toward the left, leaning in to eat the grass while glancing at the viewer."
+                  class="picture"
+                  tabindex="0"
+                  id="slide4"
+                  srcset="
+                    imgs/small-animals-gal/avif/Guneratne_2023.07.30_bunny-slope-vertical-240w.76bf3abd.avif   240w,
+                    imgs/small-animals-gal/avif/Guneratne_2023.07.30_bunny-slope-vertical-400w.685400fa.avif   400w,
+                    imgs/small-animals-gal/avif/Guneratne_2023.07.30_bunny-slope-vertical-600w.def04212.avif   600w,
+                    imgs/small-animals-gal/avif/Guneratne_2023.07.30_bunny-slope-vertical-1600w.cf40f27a.avif 1600w
+                  "
+                />
 
-                    <img
-                      src="images/small-animals-gal/Guneratne_2023.06.28_bunny-grass-vertical-780p.bed3b0da.jpg"
-                      alt="Slide 1 of 9: A rabbit standing on its hind legs reaching up to nibble on a piece of long grass above its head. The rabbit's back is to the viewer and its head is reaching up toward the top left corner of the frame."
-                      id="slide1"
-                    />
-                  </picture>
+                <!-- SQUIRREL EATING NUT -->
+                <img
+                  loading="lazy"
+                  src="imgs/small-animals-gal/jpg/Guneratne_2024.07.28_squirrel-eating-vertical-357w.070f9110.jpg"
+                  alt="Slide 5 of 15: A squirrel facing toward the left of the frame against a vibrant green background sits on top of a wooden post, holding a nut up to its mouth as it chews on the outter shell."
+                  class="picture"
+                  tabindex="0"
+                  id="slide5"
+                  srcset="
+                    imgs/small-animals-gal/avif/Guneratne_2024.07.28_squirrel-eating-vertical-214w.bcda99d6.avif   214w,
+                    imgs/small-animals-gal/avif/Guneratne_2024.07.28_squirrel-eating-vertical-357w.551a677f.avif   357w,
+                    imgs/small-animals-gal/avif/Guneratne_2024.07.28_squirrel-eating-vertical-536w.755152c8.avif   536w,
+                    imgs/small-animals-gal/avif/Guneratne_2024.07.28_squirrel-eating-vertical-1429w.141a2e78.avif 1429w
+                  "
+                />
 
-                  <!-- SQUIRREL IN TREE -->
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 300px) and (max-width: 499px) and (orientation: portrait)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.05.03_tree-squirrel-vertical-250p.34523e64.jpg                      "
-                    />
+                <!-- CHIPMUNK ON A LOG IN WOODS -->
+                <img
+                  loading="lazy"
+                  src="imgs/small-animals-gal/jpg/Guneratne_2024.07.20_chippy-log-vertical-357w.af74043f.jpg"
+                  alt="Slide 6 of 15: A fallen log in the woods enters the frame at the bottom center and moves toward the back of the frame. It is surrounded on the top and sides of the frame by large green maple leaves and other vegetation. A chipmunk sits on the log, alert and facing toward the left of the frame, its eye clearly watching the viewer discreetly."
+                  class="picture"
+                  tabindex="0"
+                  id="slide6"
+                  srcset="
+                    imgs/small-animals-gal/avif/Guneratne_2024.07.20_chippy-log-vertical-214w.befba727.avif   214w,
+                    imgs/small-animals-gal/avif/Guneratne_2024.07.20_chippy-log-vertical-357w.edba16de.avif   357w,
+                    imgs/small-animals-gal/avif/Guneratne_2024.07.20_chippy-log-vertical-536w.5ca0bc47.avif   536w,
+                    imgs/small-animals-gal/avif/Guneratne_2024.07.20_chippy-log-vertical-1429w.5e7acaea.avif 1429w
+                  "
+                />
 
-                    <source
-                      media="(min-width: 500px) and (max-width: 750px) and (orientation: portrait)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.05.03_tree-squirrel-vertical-420p.f1b81e39.jpg                      "
-                    />
+                <!-- BUNNY EAR GLOW -->
+                <img
+                  loading="lazy"
+                  src="imgs/small-animals-gal/jpg/Guneratne_2023.07.30_bunny-ear-glow-horizontal-500w.6ec7c633.jpg"
+                  alt="Slide 7 of 15: A rabbit sitting in long grass staring straight ahead at the viewer, with the glow of sunset hitting its left ear from behind, making it look almost translucent."
+                  class="picture"
+                  tabindex="0"
+                  id="slide7"
+                  srcset="
+                    imgs/small-animals-gal/avif/Guneratne_2023.07.30_bunny-ear-glow-horizontal-300w.1c5cd7d2.avif   300w,
+                    imgs/small-animals-gal/avif/Guneratne_2023.07.30_bunny-ear-glow-horizontal-500w.871c98df.avif   500w,
+                    imgs/small-animals-gal/avif/Guneratne_2023.07.30_bunny-ear-glow-horizontal-750w.cc48f21a.avif   750w,
+                    imgs/small-animals-gal/avif/Guneratne_2023.07.30_bunny-ear-glow-horizontal-2000w.abbc1c30.avif 2000w
+                  "
+                />
 
-                    <source
-                      media="(min-width: 751px) and (max-width: 1020px) and (orientation: portrait)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.05.03_tree-squirrel-vertical-600p.da969104.jpg                      "
-                    />
+                <!-- SQUIRREL IN WOODS ON TRUNK -->
+                <img
+                  loading="lazy"
+                  src="imgs/small-animals-gal/jpg/Guneratne_2023.11.04_squirrel-log-horizontal-500w.216dc21d.jpg"
+                  alt="Slide 8 of 15: A grey squirrel in a wooded area, sitting on a felled dead tree trunk, facing toward the left in the frame with its left paw lifted and looking alert at the viewer."
+                  class="picture"
+                  tabindex="0"
+                  id="slide8"
+                  srcset="
+                    imgs/small-animals-gal/avif/Guneratne_2023.11.04_squirrel-log-horizontal-300w.bacea203.avif   300w,
+                    imgs/small-animals-gal/avif/Guneratne_2023.11.04_squirrel-log-horizontal-500w.f4dd6c2d.avif   500w,
+                    imgs/small-animals-gal/avif/Guneratne_2023.11.04_squirrel-log-horizontal-750w.e476ddd2.avif   750w,
+                    imgs/small-animals-gal/avif/Guneratne_2023.11.04_squirrel-log-horizontal-2000w.1b509f35.avif 2000w
+                  "
+                />
 
-                    <img
-                      src="images/small-animals-gal/Guneratne_2024.05.03_tree-squirrel-vertical-780p.9bf4e66d.jpg"
-                      alt="Slide 2 of 9: A squirrel climbing a thin branch of a cherry tree that has young leaves and spring buds. The squirrel is partially hidden behind the leaves, holding onto one of them as if to eat the end, facing diagonally upward at the right side of the frame, while keeping half an eye on the viewer."
-                      id="slide2"
-                    />
-                  </picture>
+                <!-- SKUNK -->
+                <img
+                  loading="lazy"
+                  src="imgs/small-animals-gal/jpg/Guneratne_2023.08.22_skunk-horizontal-500w.61279ac1.jpg"
+                  alt="Slide 9 of 15: A skunk walking toward the left of the frame with its bushy tail in the air, partially hidden by out-of-focus green branches, with a dead tree stump just behind it."
+                  class="picture"
+                  tabindex="0"
+                  id="slide9"
+                  srcset="
+                    imgs/small-animals-gal/avif/Guneratne_2023.08.22_skunk-horizontal-300w.c10a88b7.avif   300w,
+                    imgs/small-animals-gal/avif/Guneratne_2023.08.22_skunk-horizontal-500w.c3b9cb5d.avif   500w,
+                    imgs/small-animals-gal/avif/Guneratne_2023.08.22_skunk-horizontal-750w.8cb21bcb.avif   750w,
+                    imgs/small-animals-gal/avif/Guneratne_2023.08.22_skunk-horizontal-2000w.e0ae5fb0.avif 2000w
+                  "
+                />
 
-                  <!-- CHIPMUNK PIPE PEEKING -->
+                <!-- BUNNY CLOSEUP -->
+                <img
+                  loading="lazy"
+                  src="imgs/small-animals-gal/jpg/Guneratne_2023.08.11_bunny-close-horizontal-500w.a1dc2de5.jpg"
+                  alt="Slide 10 of 15: A closeup portrait of a rabbit that is sitting on the ground peering through long blades of grass, looking at the viewer, while also nibbling on the grass."
+                  class="picture"
+                  tabindex="0"
+                  id="slide10"
+                  srcset="
+                    imgs/small-animals-gal/avif/Guneratne_2023.08.11_bunny-close-horizontal-300w.e9c540bf.avif   300w,
+                    imgs/small-animals-gal/avif/Guneratne_2023.08.11_bunny-close-horizontal-500w.49d8b581.avif   500w,
+                    imgs/small-animals-gal/avif/Guneratne_2023.08.11_bunny-close-horizontal-750w.8b0f7d54.avif   750w,
+                    imgs/small-animals-gal/avif/Guneratne_2023.08.11_bunny-close-horizontal-2000w.72e04794.avif 2000w
+                  "
+                />
 
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 300px) and (max-width: 499px) and (orientation: portrait)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.06.19_chipmunk-pipe-vertical-250p.6459eea1.jpg                      "
-                    />
+                <!-- SQUIRREL ON CEDAR TRUNK (landscape) -->
+                <img
+                  loading="lazy"
+                  src="imgs/small-animals-gal/jpg/Guneratne_2024.06.28_squirrel-cedar-horizontal-500w.9f4a2700.jpg"
+                  alt="Slide 11 of 15: And old dead branch of a cedar tree with fraying bark enters the frame at the top left, and curves down toward the bottom right of the frame. A squirrel clings onto the branch, peeking around it and gazing at the viewer playfully. "
+                  class="picture"
+                  tabindex="0"
+                  id="slide11"
+                  srcset="
+                    imgs/small-animals-gal/avif/Guneratne_2024.06.28_squirrel-cedar-horizontal-300w.ba023013.avif   300w,
+                    imgs/small-animals-gal/avif/Guneratne_2024.06.28_squirrel-cedar-horizontal-500w.1405aa2e.avif   500w,
+                    imgs/small-animals-gal/avif/Guneratne_2024.06.28_squirrel-cedar-horizontal-750w.b6f0d75f.avif   750w,
+                    imgs/small-animals-gal/avif/Guneratne_2024.06.28_squirrel-cedar-horizontal-2000w.ffc4799a.avif 2000w
+                  "
+                />
 
-                    <source
-                      media="(min-width: 500px) and (max-width: 750px) and (orientation: portrait)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.06.19_chipmunk-pipe-vertical-420p.7d586638.jpg                      "
-                    />
+                <!-- CHIPMUNK AMONGST THE GREENS -->
+                <img
+                  loading="lazy"
+                  src="imgs/small-animals-gal/jpg/Guneratne_2024.06.25_chippy-weeds-horizontal-500w.eb6b5970.jpg"
+                  alt="Slide 12 of 15: A small chipmunk sits in the center of the frame on its hind legs, holding its front paws close to its body. The chipmunk is angled toward the front-left of the frame, looking coyly at the viewer out of the corder of its eye, and is surrounded by leafy green weeds."
+                  class="picture"
+                  tabindex="0"
+                  id="slide12"
+                  srcset="
+                    imgs/small-animals-gal/avif/Guneratne_2024.06.25_chippy-weeds-horizontal-300w.e5de1048.avif   300w,
+                    imgs/small-animals-gal/avif/Guneratne_2024.06.25_chippy-weeds-horizontal-500w.59de8024.avif   500w,
+                    imgs/small-animals-gal/avif/Guneratne_2024.06.25_chippy-weeds-horizontal-750w.8f7e8ff3.avif   750w,
+                    imgs/small-animals-gal/avif/Guneratne_2024.06.25_chippy-weeds-horizontal-2000w.15eebddf.avif 2000w
+                  "
+                />
 
-                    <source
-                      media="(min-width: 751px) and (max-width: 1020px) and (orientation: portrait)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.06.19_chipmunk-pipe-vertical-600p.24581095.jpg                      "
-                    />
+                <!-- BUNNY SCRATCHING -->
+                <img
+                  loading="lazy"
+                  src="imgs/small-animals-gal/jpg/Guneratne_2023.08.04_bunny-scratch-horizontal-500w.58a0025e.jpg"
+                  alt="Slide 13 of 15: A rabbit in the center of the frame sits in a patch of long grass facing toward the viewer, lifting it's right hind leg to scratch its head. "
+                  class="picture"
+                  tabindex="0"
+                  id="slide13"
+                  srcset="
+                    imgs/small-animals-gal/avif/Guneratne_2023.08.04_bunny-scratch-horizontal-300w.5ae39919.avif   300w,
+                    imgs/small-animals-gal/avif/Guneratne_2023.08.04_bunny-scratch-horizontal-500w.30c08564.avif   500w,
+                    imgs/small-animals-gal/avif/Guneratne_2023.08.04_bunny-scratch-horizontal-750w.a825d5d2.avif   750w,
+                    imgs/small-animals-gal/avif/Guneratne_2023.08.04_bunny-scratch-horizontal-2000w.af599313.avif 2000w
+                  "
+                />
 
-                    <img
-                      src="images/small-animals-gal/Guneratne_2024.06.19_chipmunk-pipe-vertical-780p.93110c59.jpg"
-                      alt="Slide 3 of 9: An old black drain pipe protrudes from the ground in the center of the frame, revealing the top of a chipmunk's head peeking up toward the right. The chipmunk has its right front paw on the edge of the pipe and appears to be flirting with the viewer."
-                      id="slide3"
-                    />
-                  </picture>
+                <!-- SQUIRREL SITTING ON CEDAR TRUNK (portrait) -->
+                <img
+                  loading="lazy"
+                  src="imgs/small-animals-gal/jpg/Guneratne_2024.05.25_squirrel-stump-vertical-357w.24f2c59b.jpg"
+                  alt="Slide 14 of 15: A grey squirrel sitting on top of a hollowed out old trunk of a cedar tree, angled toward the front left of the frame and looking cautiously at the viewer."
+                  class="picture"
+                  tabindex="0"
+                  id="slide14"
+                  srcset="
+                    imgs/small-animals-gal/avif/Guneratne_2024.05.25_squirrel-stump-vertical-214w.71ab17c0.avif   214w,
+                    imgs/small-animals-gal/avif/Guneratne_2024.05.25_squirrel-stump-vertical-357w.7f1039fe.avif   357w,
+                    imgs/small-animals-gal/avif/Guneratne_2024.05.25_squirrel-stump-vertical-536w.80d7e6f4.avif   536w,
+                    imgs/small-animals-gal/avif/Guneratne_2024.05.25_squirrel-stump-vertical-1429w.8186b0d2.avif 1429w
+                  "
+                />
 
-                  <!-- BUNNY AT DAWN -->
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 300px) and (max-width: 499px) and (orientation: portrait)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.07.28_bunny-dawn-vertical-250p.15d94b28.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 500px) and (max-width: 750px) and (orientation: portrait)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.07.28_bunny-dawn-vertical-420p.378ff9cc.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 751px) and (max-width: 1020px) and (orientation: portrait)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.07.28_bunny-dawn-vertical-600p.dd5ef46a.jpg                      "
-                    />
-
-                    <img
-                      src="images/small-animals-gal/Guneratne_2024.07.28_bunny-dawn-vertical-780p.e1ab63cc.jpg"
-                      alt="Slide 4 of 9: A rabbit eating at dawn, with the soft glow of sunlight starting to shine on it from the left. The rabbit is standing on its hind legs facing toward the left, reaching up to each the green vegetation above its head."
-                      id="slide4"
-                    />
-                  </picture>
-
-                  <!-- SQUIRREL SITTING ON CEDAR TRUNK -->
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 300px) and (max-width: 499px) and (orientation: portrait)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.05.25_squirrel-cedar-vertical-250p.ef46ae27.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 500px) and (max-width: 750px) and (orientation: portrait)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.05.25_squirrel-cedar-vertical-420p.a99c1444.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 751px) and (max-width: 1020px) and (orientation: portrait)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.05.25_squirrel-cedar-vertical-600p.3488d53b.jpg                      "
-                    />
-
-                    <img
-                      src="images/small-animals-gal/Guneratne_2024.05.25_squirrel-cedar-vertical-780p.27e10726.jpg"
-                      alt="Slide 5 of 9: A grey squirrel sitting on top of a hollowed out old trunk of a cedar tree, angled toward the front left of the frame and looking cautiously at the viewer."
-                      id="slide5"
-                    />
-                  </picture>
-
-                  <!-- CHIPMUNK IN DRAIN PIPE -->
-
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 300px) and (max-width: 499px) and (orientation: portrait)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.06.19_chipmunk-pipe-tall-vertical-250p.c05d1652.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 500px) and (max-width: 750px) and (orientation: portrait)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.06.19_chipmunk-pipe-vertical-420p.7d586638.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 751px) and (max-width: 1020px) and (orientation: portrait)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.06.19_chipmunk-pipe-tall-vertical-600p.8dc7ff68.jpg                      "
-                    />
-
-                    <img
-                      src="images/small-animals-gal/Guneratne_2024.06.19_chipmunk-pipe-tall-vertical-780.b4d89f54.jpg"
-                      alt="Slide 6 of 9: An old black drainpipe slightly protrudes from the ground in the center of the frame against a white wall. There is a chipmunk inside of the pipe with its paws holding the side and lifting its head out of the pipe, facing slightly toward the left side of the frame while gazing at the viewer."
-                      id="slide6"
-                    />
-                  </picture>
-
-                  <!-- BUNNY ON SLOPE -->
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 300px) and (max-width: 499px) and (orientation: portrait)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2023.07.30_bunny-slope-vertical-250p.049f34cb.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 500px) and (max-width: 750px) and (orientation: portrait)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2023.07.30_bunny-slope-vertical-420p.34b8f237.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 751px) and (max-width: 1020px) and (orientation: portrait)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2023.07.30_bunny-slope-vertical-600p.6526d9cb.jpg                      "
-                    />
-
-                    <img
-                      src="images/small-animals-gal/Guneratne_2023.07.30_bunny-slope-vertical-780p.d9d277a4.jpg"
-                      alt="Slide 7 of 9: A rabbit sits on a slope of grass that is entering the frame diagonally from the left toward the bottom right of the frame. The rabbit is facing up the slope toward the left, leaning in to eat the grass while glancing at the viewer."
-                      id="slide7"
-                    />
-                  </picture>
-
-                  <!-- SQUIRREL EATING NUT -->
-
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 300px) and (max-width: 499px) and (orientation: portrait)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.07.28_squirrel-nut-vertical-250p.41200dd4.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 500px) and (max-width: 750px) and (orientation: portrait)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.07.28_squirrel-nut-vertical-420p.0cb682ca.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 751px) and (max-width: 1020px) and (orientation: portrait)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.07.28_squirrel-nut-vertical-600p.bfe7324f.jpg                      "
-                    />
-
-                    <img
-                      src="images/small-animals-gal/Guneratne_2024.07.28_squirrel-nut-vertical-780p.9078450d.jpg"
-                      alt="Slide 8 of 9: A squirrel facing toward the left of the frame against a vibrant green background sits on top of a wooden post, holding a nut up to its mouth as it chews on the outter shell."
-                      id="slide8"
-                    />
-                  </picture>
-
-                  <!-- CHIPMUN ON A LOG IN WOODS -->
-
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 300px) and (max-width: 499px) and (orientation: portrait)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.07.20_chipmunk-log-vertical-250p.68fe19ff.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 500px) and (max-width: 750px) and (orientation: portrait)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.07.20_chipmunk-log-vertical-420p.787468eb.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 751px) and (max-width: 1020px) and (orientation: portrait)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.07.20_chipmunk-log-vertical-600p.a7104e27.jpg                      "
-                    />
-
-                    <img
-                      src="images/small-animals-gal/Guneratne_2024.07.20_chipmunk-log-vertical-780p.b13f4c58.jpg"
-                      alt="Slide 9 of 9: A fallen log in the woods enters the frame at the bottom center and moves toward the back of the frame. It is surrounded on the top and sides of the frame by large green maple leaves and other vegetation. A chipmunk sits on the log, altert and facing toward the left of the frame, its eye clearly watching the viewer discreetly."
-                      id="slide9"
-                    />
-                  </picture>
-                </div>
-
-                <button type="button" class="forward-arrow" data-forward-arrow>
-                  <img
-                    data-icon-forward
-                    class="arrow"
-                    src="images/icons/reshot-icon-arrow-chevron-right-WDGHUKQ634.15e2fc11.svg"
-                    alt="Forward Arrow"
-                  />
-                </button>
+                <!-- BUNNY EATING GRASS -->
+                <img
+                  loading="lazy"
+                  src="imgs/small-animals-gal/jpg/Guneratne_2023.06.28_bunny-grass-vertical-333w.de883296.jpg"
+                  alt="Slide 15 of 15: A rabbit standing on its hind legs reaching up to nibble on a piece of long grass above its head. The rabbit's back is to the viewer and its head is reaching up toward the top left corner of the frame."
+                  class="picture"
+                  tabindex="0"
+                  id="slide15"
+                  srcset="
+                    imgs/small-animals-gal/avif/Guneratne_2023.06.28_bunny-grass-vertical-200w.96c6e74d.avif   200w,
+                    imgs/small-animals-gal/avif/Guneratne_2023.06.28_bunny-grass-vertical-333w.cd086794.avif   333w,
+                    imgs/small-animals-gal/avif/Guneratne_2023.06.28_bunny-grass-vertical-500w.83172ea6.avif   500w,
+                    imgs/small-animals-gal/avif/Guneratne_2023.06.28_bunny-grass-vertical-1333w.a8757a04.avif 1333w
+                  "
+                />
               </div>
+
+              <button type="button" class="forward-arrow" data-forward-arrow>
+                <img
+                  data-icon-forward
+                  class="arrow"
+                  src="imgs/icons/reshot-icon-arrow-chevron-right-WDGHUKQ634.15e2fc11.svg"
+                  alt="Forward Arrow"
+                />
+              </button>
 
               <div class="img-dots-container">
                 <div class="img-dots">
@@ -417,7 +432,7 @@
                     type="button"
                     class="circle-icon-div"
                     data-circle="0"
-                    aria-label="Select Slide 1 of 9."
+                    aria-label="Select Slide 1 of 15."
                   >
                     <div class="circle-icon" data-circle="0"></div>
                   </button>
@@ -426,7 +441,7 @@
                     type="button"
                     class="circle-icon-div"
                     data-circle="1"
-                    aria-label="Select Slide 2 of 9."
+                    aria-label="Select Slide 2 of 15."
                   >
                     <div class="circle-icon" data-circle="1"></div>
                   </button>
@@ -435,7 +450,7 @@
                     type="button"
                     class="circle-icon-div"
                     data-circle="2"
-                    aria-label="Select Slide 3 of 9."
+                    aria-label="Select Slide 3 of 15."
                   >
                     <div class="circle-icon" data-circle="2"></div>
                   </button>
@@ -444,7 +459,7 @@
                     type="button"
                     class="circle-icon-div"
                     data-circle="3"
-                    aria-label="Select Slide 4 of 9."
+                    aria-label="Select Slide 4 of 15."
                   >
                     <div class="circle-icon" data-circle="3"></div>
                   </button>
@@ -453,7 +468,7 @@
                     type="button"
                     class="circle-icon-div"
                     data-circle="4"
-                    aria-label="Select Slide 5 of 9."
+                    aria-label="Select Slide 5 of 15."
                   >
                     <div class="circle-icon" data-circle="4"></div>
                   </button>
@@ -462,7 +477,7 @@
                     type="button"
                     class="circle-icon-div"
                     data-circle="5"
-                    aria-label="Select Slide 6 of 9."
+                    aria-label="Select Slide 6 of 15."
                   >
                     <div class="circle-icon" data-circle="5"></div>
                   </button>
@@ -471,7 +486,7 @@
                     type="button"
                     class="circle-icon-div"
                     data-circle="6"
-                    aria-label="Select Slide 7 of 9."
+                    aria-label="Select Slide 7 of 15."
                   >
                     <div class="circle-icon" data-circle="6"></div>
                   </button>
@@ -480,7 +495,7 @@
                     type="button"
                     class="circle-icon-div"
                     data-circle="7"
-                    aria-label="Select Slide 8 of 9."
+                    aria-label="Select Slide 8 of 15."
                   >
                     <div class="circle-icon" data-circle="7"></div>
                   </button>
@@ -489,460 +504,7 @@
                     type="button"
                     class="circle-icon-div"
                     data-circle="8"
-                    aria-label="Select Slide 9 of 9."
-                  >
-                    <div class="circle-icon" data-circle="8"></div>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section
-          class="section gal-landscape"
-          id="small-animals-gallery"
-          hidden
-        >
-          <div class="gallery landscape-gallery">
-            <div class="animation-ctrl-div landscape-animation-ctrl-div">
-  <button
-    type="button"
-    class="pause-btn landscape-pause-btn"
-    title="Press Enter or Space to Pause Gallery Animation"
-  >
-    <img
-      class="pause-icon landscape-pause-icon"
-      src="images/icons/pause-btn.ff0eedcb.svg"
-      alt="Press Enter or Space to Pause Gallery Animation"
-    />
-  </button>
-
-  <button
-    type="button"
-    class="play-btn landscape-play-btn"
-    title="Press Enter or Space to Start Gallery Animation"
-  >
-    <img
-      class="play-icon landscape-play-icon"
-      src="images/icons/play-btn.75224a2a.svg"
-      title="Start Gallery Animation"
-      alt="Press Enter or Space to Start Gallery Animation"
-    />
-  </button>
-</div>
-
-
-            <div
-              class="slider-box landscape-slider-box"
-              tabindex="0"
-              role="region"
-              aria-roledescription="photo slider"
-              aria-label="Small Animals Gallery"
-              hidden
-            >
-              <div class="img-display-container">
-                <button type="button" class="back-arrow" data-back-arrow>
-                  <img
-                    data-icon-back
-                    class="arrow"
-                    src="images/icons/reshot-icon-arrow-chevron-left-975UQXVKZF.066aee6a.svg"
-                    alt="Back Arrow"
-                  />
-                </button>
-
-                <div class="photo-box landscape-photo-box">
-                  <!-- BUNNY EATING GRASS -->
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 640px) and (max-width: 959px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2023.06.28_bunny_grass-horizontal-280p.1129c272.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 960px) and (max-width: 1279px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2023.06.28_bunny_grass-horizontal-460p.fd2bddc2.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 1280px) and (max-width: 1599px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2023.06.28_bunny_grass-horizontal-600p.47da4c4d.jpg                      "
-                    />
-
-                    <img
-                      src="images/small-animals-gal/Guneratne_2023.06.28_bunny_grass-horizontal-900p.4e047372.jpg"
-                      alt="Slide 1 of 11: The side view of a rabbit, facing to the left of the frame with a long piece of grass in its mouth."
-                      id="slide1"
-                    />
-                  </picture>
-
-                  <!-- SQUIRREL IN TREE -->
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 640px) and (max-width: 959px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.05.03_tree-squirrel-horizontal-280p.a70845d2.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 960px) and (max-width: 1279px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.05.03_tree-squirrel-horizontal-460p.a4f1e8f0.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 1280px) and (max-width: 1599px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.05.03_tree-squirrel-horizontal-600p.6aa001b7.jpg                      "
-                    />
-
-                    <img
-                      src="images/small-animals-gal/Guneratne_2024.05.03_tree-squirrel-horizontal-900p.99ae14de.jpg"
-                      alt="Slide 2 of 11: A squirrel climbing a thin branch of a cherry tree that has young leaves and spring buds. The squirrel is partially hidden behind the leaves, holding onto one of them, with its face peering over the leaf at the viewer."
-                      id="slide2"
-                    />
-                  </picture>
-
-                  <!-- CHIPMUNK EATING -->
-
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 640px) and (max-width: 959px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.05.24_chipmunk-eating-horizontal-280p.cd0148ef.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 960px) and (max-width: 1279px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.05.24_chipmunk-eating-horizontal-460p.e2f802c7.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 1280px) and (max-width: 1599px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.05.24_chipmunk-eating-horizontal-600p.ef9705aa.jpg                      "
-                    />
-
-                    <img
-                      src="images/small-animals-gal/Guneratne_2024.05.24_chipmunk-eating-horizontal-900p.dee74a3d.jpg"
-                      alt="Slide 3 of 11: A chipmunk in the center of the frame facing left, standing on its hind legs with its hands up to its mouth as it eats something. There are white stones on the ground in front of the chipmunk and the broun ground of the woods is out of focus behind it."
-                      id="slide3"
-                    />
-                  </picture>
-
-                  <!-- BUNNY EAR GLOW -->
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 640px) and (max-width: 959px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2023.07.30_bunny_glow-horizontal-280p.c508086e.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 960px) and (max-width: 1279px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2023.07.30_bunny_glow-horizontal-460p.6efef4a7.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 1280px) and (max-width: 1599px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2023.07.30_bunny_glow-horizontal-600p.88e07350.jpg                      "
-                    />
-
-                    <img
-                      src="images/small-animals-gal/Guneratne_2023.07.30_bunny_glow-horizontal-900p.83b1e754.jpg"
-                      alt="Slide 4 of 11: A rabbit sitting in long grass staring straight ahead at the viewer, with the glow of sunset hitting its left ear from behind, making it look almost translucent."
-                      id="slide4"
-                    />
-                  </picture>
-
-                  <!-- SKUNK -->
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 640px) and (max-width: 959px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2023.08.22_skunk-horizontal-280p.c013efe2.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 960px) and (max-width: 1279px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2023.08.22_skunk-horizontal-460p.d6b6366e.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 1280px) and (max-width: 1599px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2023.08.22_skunk-horizontal-600p.7946d7ac.jpg                      "
-                    />
-
-                    <img
-                      src="images/small-animals-gal/Guneratne_2023.08.22_skunk-horizontal-900p.696b398f.jpg"
-                      alt="Slide 5 of 11: A skunk walking toward the left of the frame with its bushy tail in the air, partially hidden by out-of-focus green branches, with a dead tree stump just behind it."
-                      id="slide5"
-                    />
-                  </picture>
-
-                  <!-- CHIPMUNK IN PIPE -->
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 640px) and (max-width: 959px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.06.14_chipmunk-pipe-horizontal-280p.38840dbd.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 960px) and (max-width: 1279px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.06.14_chipmunk-pipe-horizontal-460p.9fa4884c.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 1280px) and (max-width: 1599px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.06.14_chipmunk-pipe-horizontal-600p.fcfaa0e0.jpg                      "
-                    />
-
-                    <img
-                      src="images/small-animals-gal/Guneratne_2024.06.14_chipmunk-pipe-horizontal-900p.dd11728f.jpg"
-                      alt="Slide 6 of 11: An old black drainpipe slightly protrudes from the ground in the center of the frame against a white wall. There is a chipmunk poking its head out of the pipe, facing toward the left side of the frame."
-                      id="slide6"
-                    />
-                  </picture>
-
-                  <!-- BUNNY CLOSEUP -->
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 640px) and (max-width: 959px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2023.08.11_bunny_close-horizontal-280p.4809bca1.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 960px) and (max-width: 1279px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2023.08.11_bunny_close-horizontal-460p.81825253.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 1280px) and (max-width: 1599px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2023.08.11_bunny_close-horizontal-600p.5cd8a7da.jpg                      "
-                    />
-
-                    <img
-                      src="images/small-animals-gal/Guneratne_2023.08.11_bunny_close-horizontal-900p.33dbce29.jpg"
-                      alt="Slide 7 of 11: A closeup portrait of a rabbit that is sitting on the ground peering through long blades of grass, looking at the viewer, while also nibbling on the grass."
-                      id="slide7"
-                    />
-                  </picture>
-
-                  <!-- SQUIRREL IN WOODS ON TRUNK -->
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 640px) and (max-width: 959px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2023.11.04_squirrel-woods-horiztontal-280p.a7cf3c5b.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 960px) and (max-width: 1279px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2023.11.04_squirrel-woods-horiztontal-460p.cdb3028b.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 1280px) and (max-width: 1599px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2023.11.04_squirrel-woods-horiztontal-600p.0d9cc40d.jpg                      "
-                    />
-
-                    <img
-                      src="images/small-animals-gal/Guneratne_2023.11.04_squirrel-woods-horiztontal-900p.0c3ad764.jpg"
-                      alt="Slide 8 of 11: A grey squirrel in a wooded area, sitting on a felled dead tree trunk, facing toward the left in the frame with its left paw lifted and looking alert at the viewer."
-                      id="slide8"
-                    />
-                  </picture>
-
-                  <!-- CHIPMUNK AMONGST THE GREENS -->
-
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 640px) and (max-width: 959px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.06.25_chipmunk-greens-horizontal-280p.39692a0b.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 960px) and (max-width: 1279px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.06.25_chipmunk-greens-horizontal-460p.0ba118c2.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 1280px) and (max-width: 1599px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.06.25_chipmunk-greens-horizontal-600p.6a57ca7c.jpg                      "
-                    />
-
-                    <img
-                      src="images/small-animals-gal/Guneratne_2024.06.25_chipmunk-greens-horizontal-900p.f9737e78.jpg"
-                      alt="Slide 9 of 11: A small chipmunk sits in the center of the frame on its hind legs, holding its front paws close to its body. The chipmunk is angled toward the front-left of the frame, looking coyly at the viewer out of the corder of its eye, and is surrounded by leafy green weeds."
-                      id="slide9"
-                    />
-                  </picture>
-
-                  <!-- BUNNY SCRATCHING -->
-
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 640px) and (max-width: 959px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2023.08.04_bunny-scratch-horizontal-280p.fedaabb2.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 960px) and (max-width: 1279px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2023.08.04_bunny-scratch-horizontal-460p.8f2072df.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 1280px) and (max-width: 1599px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2023.08.04_bunny-scratch-horizontal-600p.f43554c4.jpg                      "
-                    />
-
-                    <img
-                      src="images/small-animals-gal/Guneratne_2023.08.04_bunny-scratch-horizontal-900p.99283da4.jpg"
-                      alt="Slide 10 of 11: A rabbit in the center of the frame sits in a patch of long grass facing toward the viewer, lifting it's right hind leg to scratch its head. "
-                      id="slide10"
-                    />
-                  </picture>
-
-                  <!-- SQUIRREL ON CEDAR TRUNK -->
-
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 640px) and (max-width: 959px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.06.28_squirrel-cedar-horizontal-280p.2cb29d59.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 960px) and (max-width: 1279px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.06.28_squirrel-cedar-horizontal-460p.c94dbaa3.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 1280px) and (max-width: 1599px) and (orientation: landscape)"
-                      srcset="
-                        images/small-animals-gal/Guneratne_2024.06.28_squirrel-cedar-horizontal-600p.f1b9d9be.jpg                      "
-                    />
-
-                    <img
-                      src="images/small-animals-gal/Guneratne_2024.06.28_squirrel-cedar-horizontal-900p.221f81a4.jpg"
-                      alt="Slide 11 of 11: And old dead branch of a cedar tree with fraying bark enters the frame at the top left, and curves down toward the bottom right of the frame. A squirrel clings onto the branch, peeking around it and gazing at the viewer playfully. "
-                      id="slide11"
-                    />
-                  </picture>
-                </div>
-
-                <button type="button" class="forward-arrow" data-forward-arrow>
-                  <img
-                    data-icon-forward
-                    class="arrow"
-                    src="images/icons/reshot-icon-arrow-chevron-right-WDGHUKQ634.15e2fc11.svg"
-                    alt="Forward Arrow"
-                  />
-                </button>
-              </div>
-
-              <div class="img-dots-container">
-                <div class="img-dots">
-                  <button
-                    type="button"
-                    class="circle-icon-div"
-                    data-circle="0"
-                    aria-label="Select Slide 1 of 11."
-                  >
-                    <div class="circle-icon" data-circle="0"></div>
-                  </button>
-
-                  <button
-                    type="button"
-                    class="circle-icon-div"
-                    data-circle="1"
-                    aria-label="Select Slide 2 of 11."
-                  >
-                    <div class="circle-icon" data-circle="1"></div>
-                  </button>
-
-                  <button
-                    type="button"
-                    class="circle-icon-div"
-                    data-circle="2"
-                    aria-label="Select Slide 3 of 11."
-                  >
-                    <div class="circle-icon" data-circle="2"></div>
-                  </button>
-
-                  <button
-                    type="button"
-                    class="circle-icon-div"
-                    data-circle="3"
-                    aria-label="Select Slide 4 of 11."
-                  >
-                    <div class="circle-icon" data-circle="3"></div>
-                  </button>
-
-                  <button
-                    type="button"
-                    class="circle-icon-div"
-                    data-circle="4"
-                    aria-label="Select Slide 5 of 11."
-                  >
-                    <div class="circle-icon" data-circle="4"></div>
-                  </button>
-
-                  <button
-                    type="button"
-                    class="circle-icon-div"
-                    data-circle="5"
-                    aria-label="Select Slide 6 of 11."
-                  >
-                    <div class="circle-icon" data-circle="5"></div>
-                  </button>
-
-                  <button
-                    type="button"
-                    class="circle-icon-div"
-                    data-circle="6"
-                    aria-label="Select Slide 7 of 11."
-                  >
-                    <div class="circle-icon" data-circle="6"></div>
-                  </button>
-
-                  <button
-                    type="button"
-                    class="circle-icon-div"
-                    data-circle="7"
-                    aria-label="Select Slide 8 of 11."
-                  >
-                    <div class="circle-icon" data-circle="7"></div>
-                  </button>
-
-                  <button
-                    type="button"
-                    class="circle-icon-div"
-                    data-circle="8"
-                    aria-label="Select Slide 9 of 11."
+                    aria-label="Select Slide 9 of 15."
                   >
                     <div class="circle-icon" data-circle="8"></div>
                   </button>
@@ -951,7 +513,7 @@
                     type="button"
                     class="circle-icon-div"
                     data-circle="9"
-                    aria-label="Select Slide 10 of 11."
+                    aria-label="Select Slide 10 of 15."
                   >
                     <div class="circle-icon" data-circle="9"></div>
                   </button>
@@ -960,9 +522,45 @@
                     type="button"
                     class="circle-icon-div"
                     data-circle="10"
-                    aria-label="Select Slide 11 of 11."
+                    aria-label="Select Slide 11 of 15."
                   >
                     <div class="circle-icon" data-circle="10"></div>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="circle-icon-div"
+                    data-circle="11"
+                    aria-label="Select Slide 12 of 15."
+                  >
+                    <div class="circle-icon" data-circle="11"></div>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="circle-icon-div"
+                    data-circle="12"
+                    aria-label="Select Slide 13 of 15."
+                  >
+                    <div class="circle-icon" data-circle="12"></div>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="circle-icon-div"
+                    data-circle="13"
+                    aria-label="Select Slide 14 of 15."
+                  >
+                    <div class="circle-icon" data-circle="13"></div>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="circle-icon-div"
+                    data-circle="14"
+                    aria-label="Select Slide 15 of 15."
+                  >
+                    <div class="circle-icon" data-circle="14"></div>
                   </button>
                 </div>
               </div>
@@ -981,7 +579,7 @@
       rel="noopener noreferrer"
     >
       <img
-        src="images/icons/github-mark.6fa18895.svg"
+        src="imgs/icons/github-mark.6fa18895.svg"
         alt="GitHub Logo: Click to visit GitHub repository for this site."
         class="github-logo"
       />

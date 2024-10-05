@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width" />
     <!-- Removed initial-scale and max-width from content attribute to fix zooming problems on mobile -->
     <title>Bosco Images Wildlife Photography: Photo Galleries</title>
-    <link href="css/style.6a6030da.css" rel="stylesheet" integrity="sha384-oex9XMgaSzA39Bof7TOOfrnFjhsSaNLYjAuQVCaw9G66ZkjNmnwfUmS5cGGVH2J6" crossorigin="anonymous">
-    <script src="js/menu-index.f8b4d405.js" defer="defer" integrity="sha384-rp9ghluGStRY3hL1OjCeTifEXEgHZ+NKZKZzgZ4jSf8oCdCMPmp5vex7+coF7os2" crossorigin="anonymous"></script>
+    <link href="styles/body-styles.5567702d.css" rel="stylesheet" />
+    <link href="styles/thumbnail-styles.1f3bd282.css" rel="stylesheet" />
+    <script src="js/menu-index.2ac22860.js" defer="defer"></script>
+    <script src="js/footerDate.e96c2161.js" defer="defer"></script>
   </head>
 
   <body>
@@ -17,7 +19,7 @@
     <button class="menu-icon-div">
       <img
         class="menu-icon"
-        src="images/icons/menu-symbol-of-three-parallel-lines-svgrepo-com.b45ba31c.svg"
+        src="imgs/icons/menu-symbol-of-three-parallel-lines-svgrepo-com.b45ba31c.svg"
         alt="Menu Button: Click to expand menu options"
       />
     </button>
@@ -76,6 +78,30 @@
               >Small Animals</a
             >
           </li>
+
+          <li
+            role="menuitem"
+            class="dropdown-item"
+            style="--delay: 4"
+            data-name="pond-life-gallery"
+          >
+            <a aria-label="Urban Animals Gallery" href="pond-life-gallery.html"
+              >Pond Life</a
+            >
+          </li>
+
+          <li
+            role="menuitem"
+            class="dropdown-item"
+            style="--delay: 5"
+            data-name="urban-animals-gallery"
+          >
+            <a
+              aria-label="Urban Animals Gallery"
+              href="urban-animals-gallery.html"
+              >Urban Animals</a
+            >
+          </li>
         </ul>
       </li>
 
@@ -112,8 +138,11 @@
             >
               <div class="thumbnail-box">
                 <img
+                  loading="lazy"
                   class="thumbnail-img"
-                  src="images/thumbnails/Guneratne_2023.06.27_birds-gal-thumb.258a2301.jpg"
+                  srcset="
+                    imgs/thumbnails/avif/Guneratne_2023.06.27_birds-gal-thumb.aa98bd46.avif                  "
+                  src="imgs/thumbnails/jpg/Guneratne_2023.06.27_birds-gal-thumb.258a2301.jpg"
                   alt="A bright red male cardinal on the right of the frame perched on a stick gazing toward the left of the frame, with an out-of-focus green background."
                 />
                 <p class="gal-title">Birds Gallery</p>
@@ -127,8 +156,11 @@
             >
               <div class="thumbnail-box">
                 <img
+                  loading="lazy"
                   class="thumbnail-img"
-                  src="images/thumbnails/Guneratne_2023.09.05_insects-gal-thumb.07b917f6.jpg"
+                  srcset="
+                    imgs/thumbnails/avif/Guneratne_2023.09.05_insects-gal-thumb.1f1466b0.avif                  "
+                  src="imgs/thumbnails/jpg/Guneratne_2023.09.05_insects-gal-thumb.07b917f6.jpg"
                   alt="A close up of a swallowtail butterfly caterpillar, which
                   is green with black stripes, and yellow dots on every other
                   stripe. It is crawling along the branch of a dill plant,
@@ -145,11 +177,50 @@
             >
               <div class="thumbnail-box">
                 <img
+                  loading="lazy"
                   class="thumbnail-img"
-                  src="images/thumbnails/Guneratne_2024.06.19_sm-anim-gal-thumb.77c0164d.jpg"
+                  srcset="
+                    imgs/thumbnails/avif/Guneratne_2024.06.19_sm-anim-gal-thumb.029e7787.avif                  "
+                  src="imgs/thumbnails/jpg/Guneratne_2024.06.19_sm-anim-gal-thumb.77c0164d.jpg"
                   alt="An old black drain pipe protrudes from the ground in the center of the frame, revealing the top of a chipmunk's head peeking up toward the right."
                 />
                 <p class="gal-title">Small Animals Gallery</p>
+              </div>
+            </a>
+
+            <a
+              href="pond-life-gallery.html"
+              class="thumbnail-link"
+              aria-label="Click to visit the pond life image gallery."
+            >
+              <div class="thumbnail-box">
+                <img
+                  loading="lazy"
+                  class="thumbnail-img"
+                  srcset="
+                    imgs/thumbnails/avif/Guneratne_2024.06.07_pond-life-thumb.a0494141.avif                  "
+                  src="imgs/thumbnails/jpg/Guneratne_2024.06.07_pond-life-thumb.e5791256.jpg"
+                  alt="A large bull frog sits on a lilly pad in the center of the frame surrounded by blue water with a vignette of other lilly pads around the top, right, and bottom of the frame. The lilly that the frog is sitting on is partially submerged in water, held under by the weight of the frog. The frogs legs can be seen beneath the water while its body and head are above water, angled toward the bottom left corner of the frame."
+                />
+                <p class="gal-title">Pond Life Gallery</p>
+              </div>
+            </a>
+
+            <a
+              href="urban-animals-gallery.html"
+              class="thumbnail-link"
+              aria-label="Click to visit the urban animals image gallery."
+            >
+              <div class="thumbnail-box">
+                <img
+                  loading="lazy"
+                  class="thumbnail-img"
+                  srcset="
+                    imgs/thumbnails/avif/Guneratne_2023.07.27_urban-anim-thumb.615a9b90.avif                  "
+                  src="imgs/thumbnails/jpg/Guneratne_2023.07.27_urban-anim-thumb.c9e40b9d.jpg"
+                  alt="The back slats of a red adirondack chair arch through the frame from center left to the bottom right corner. A house sparrow is perchec on top of the second from the right slat, angled toward the left of the frame with it's head nobly held in the air."
+                />
+                <p class="gal-title">Urban Animals Gallery</p>
               </div>
             </a>
           </div>
@@ -166,7 +237,7 @@
       rel="noopener noreferrer"
     >
       <img
-        src="images/icons/github-mark.6fa18895.svg"
+        src="imgs/icons/github-mark.6fa18895.svg"
         alt="GitHub Logo: Click to visit GitHub repository for this site."
         class="github-logo"
       />

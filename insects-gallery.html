@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width" />
     <!-- Removed initial-scale and max-width from content attribute to fix zooming problems on mobile -->
     <title>Bosco Images Wildlife Photography: Insects Gallery</title>
-    <link href="css/style.6a6030da.css" rel="stylesheet" integrity="sha384-oex9XMgaSzA39Bof7TOOfrnFjhsSaNLYjAuQVCaw9G66ZkjNmnwfUmS5cGGVH2J6" crossorigin="anonymous">
-    <script src="js/menu-index.f8b4d405.js" defer="defer" integrity="sha384-rp9ghluGStRY3hL1OjCeTifEXEgHZ+NKZKZzgZ4jSf8oCdCMPmp5vex7+coF7os2" crossorigin="anonymous"></script>
-    <script src="js/gallery-index.28919ac7.js" defer="defer" integrity="sha384-/LufYlpqAocP7z0x530pVQYSAbF5pDSNL0QcCsxLPZKsb4lji7gsd0x8clcl54tg" crossorigin="anonymous"></script>
+    <link href="styles/body-styles.5567702d.css" rel="stylesheet" />
+    <link href="styles/slider-styles.e07c61e8.css" rel="stylesheet" />
+    <script src="js/menu-index.2ac22860.js" defer="defer"></script>
+    <script src="js/footerDate.e96c2161.js" defer="defer"></script>
+    <script src="js/gallery-index.e69562ff.js" defer="defer"></script>
   </head>
 
   <body>
@@ -18,7 +20,7 @@
     <button class="menu-icon-div">
       <img
         class="menu-icon"
-        src="images/icons/menu-symbol-of-three-parallel-lines-svgrepo-com.b45ba31c.svg"
+        src="imgs/icons/menu-symbol-of-three-parallel-lines-svgrepo-com.b45ba31c.svg"
         alt="Menu Button: Click to expand menu options"
       />
     </button>
@@ -77,6 +79,30 @@
               >Small Animals</a
             >
           </li>
+
+          <li
+            role="menuitem"
+            class="dropdown-item"
+            style="--delay: 4"
+            data-name="pond-life-gallery"
+          >
+            <a aria-label="Urban Animals Gallery" href="pond-life-gallery.html"
+              >Pond Life</a
+            >
+          </li>
+
+          <li
+            role="menuitem"
+            class="dropdown-item"
+            style="--delay: 5"
+            data-name="urban-animals-gallery"
+          >
+            <a
+              aria-label="Urban Animals Gallery"
+              href="urban-animals-gallery.html"
+              >Urban Animals</a
+            >
+          </li>
         </ul>
       </li>
 
@@ -104,281 +130,255 @@
 </header>
 
         <!-- INSECTS GALLERY -->
-        <section class="section gal-portrait" id="insects-gallery" hidden>
-          <div class="gallery portrait-gallery">
-            <div class="animation-ctrl-div portrait-animation-ctrl-div">
+
+        <section class="section" id="insects-gallery">
+          <div class="gallery">
+            <div
+              class="slider-box"
+              tabindex="0"
+              role="region"
+              aria-roledescription="photo slider"
+              aria-label="Insects Gallery"
+            >
+              <div class="animation-ctrl-div">
   <button
     type="button"
-    class="pause-btn portrait-pause-btn"
+    class="pause-btn"
     title="Press Enter or Space to Pause Gallery Animation"
   >
     <img
-      class="pause-icon portrait-pause-icon"
-      src="images/icons/pause-btn.ff0eedcb.svg"
+      class="pause-icon"
+      src="imgs/icons/pause-btn.52c970cb.svg"
       alt="Press Enter or Space to Pause Gallery Animation"
     />
   </button>
 
   <button
     type="button"
-    class="play-btn portrait-play-btn"
+    class="play-btn"
     title="Press Enter or Space to Start Gallery Animation"
   >
     <img
-      class="play-icon portrait-play-icon"
-      src="images/icons/play-btn.75224a2a.svg"
+      class="play-icon"
+      src="imgs/icons/play-btn.c0c34713.svg"
       title="Start Gallery Animation"
       alt="Press Enter or Space to Start Gallery Animation"
     />
   </button>
 </div>
 
+              <button type="button" class="back-arrow" data-back-arrow>
+                <img
+                  data-icon-back
+                  class="arrow"
+                  src="imgs/icons/reshot-icon-arrow-chevron-left-975UQXVKZF.066aee6a.svg"
+                  alt="Back Arrow"
+                />
+              </button>
 
-            <div
-              class="slider-box portrait-slider-box"
-              tabindex="0"
-              role="region"
-              aria-roledescription="photo slider"
-              aria-label="Insects Gallery"
-              hidden
-            >
-              <div class="img-display-container">
-                <button type="button" class="back-arrow" data-back-arrow>
-                  <img
-                    data-icon-back
-                    class="arrow"
-                    src="images/icons/reshot-icon-arrow-chevron-left-975UQXVKZF.066aee6a.svg"
-                    alt="Back Arrow"
-                  />
-                </button>
+              <div class="photo-box">
+                <!-- CATERPILLAR ON PARSLEY (landscape)-->
+                <img
+                  loading="lazy"
+                  src="imgs/insects-gal/jpg/Guneratne_2024.07.30_caterpillar-parsley-horizontal-500w.2d5a3146.jpg"
+                  alt="Slide 1 of 12: A close up of a swallowtail butterfly caterpillar crawling down the center of a parsley leaf toward the bottom right of the frame. The parsley leaf fills most of the frame from the center left and moves diagonally down toward the bottom right corner, spreading through the whole frame. The caterpillar has black and white stripes with yellow dots on every other black stripe, and the viewer sees its back and right side profile from above as it moves downward."
+                  class="picture"
+                  tabindex="0"
+                  id="slide6"
+                  srcset="
+                    imgs/insects-gal/avif/Guneratne_2024.07.30_caterpillar-parsley-horizontal-300w.6c00379d.avif   300w,
+                    imgs/insects-gal/avif/Guneratne_2024.07.30_caterpillar-parsley-horizontal-500w.823ddcef.avif   500w,
+                    imgs/insects-gal/avif/Guneratne_2024.07.30_caterpillar-parsley-horizontal-750w.1a36b398.avif   750w,
+                    imgs/insects-gal/avif/Guneratne_2024.07.30_caterpillar-parsley-horizontal-2000w.ba7941c5.avif 2000w
+                  "
+                />
 
-                <div class="photo-box portrait-photo-box">
-                  <!-- CATERPILLAR UP FENNEL-->
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 300px) and (max-width: 499px) and (orientation: portrait)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.09.05_caterpillar-vertical-250p.9d37e1fb.jpg                      "
-                    />
+                <!-- BEE ON SAGE FLOWER -->
+                <img
+                  loading="lazy"
+                  src="imgs/insects-gal/jpg/Guneratne_2023.06.09_bee-sage-vertical-400w.19ef9197.jpg"
+                  alt="Slide 2 of 12: A bee sitting on a purple sage flower with its arms over its head, as if about to thrust its arms forward into the flower."
+                  class="picture"
+                  tabindex="0"
+                  id="slide2"
+                  srcset="
+                    imgs/insects-gal/avif/Guneratne_2023.06.09_bee-sage-vertical-240w.49e35f5e.avif   240w,
+                    imgs/insects-gal/avif/Guneratne_2023.06.09_bee-sage-vertical-400w.be724e8d.avif   400w,
+                    imgs/insects-gal/avif/Guneratne_2023.06.09_bee-sage-vertical-600w.6cfffcb6.avif   600w,
+                    imgs/insects-gal/avif/Guneratne_2023.06.09_bee-sage-vertical-1600w.0ab8a3ea.avif 1600w
+                  "
+                />
 
-                    <source
-                      media="(min-width: 500px) and (max-width: 750px) and (orientation: portrait)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.09.05_caterpillar-vertical-420p.b96e7b69.jpg                      "
-                    />
+                <!-- GRASSHOPPER (portrait view) -->
+                <img
+                  loading="lazy"
+                  src="imgs/insects-gal/jpg/Guneratne_2023.08.26_grasshopper-vertical-400w.27407342.jpg"
+                  alt="Slide 3 of 12: A closeup of a grasshopper sitting on a serrated leaf facing upward toward the right at a diagonal angle in the frame."
+                  class="picture"
+                  tabindex="0"
+                  id="slide3"
+                  srcset="
+                    imgs/insects-gal/avif/Guneratne_2023.08.26_grasshopper-vertical-240w.03ee9884.avif   240w,
+                    imgs/insects-gal/avif/Guneratne_2023.08.26_grasshopper-vertical-400w.8dff95ff.avif   400w,
+                    imgs/insects-gal/avif/Guneratne_2023.08.26_grasshopper-vertical-600w.e8232d4e.avif   600w,
+                    imgs/insects-gal/avif/Guneratne_2023.08.26_grasshopper-vertical-1600w.0aabe2ea.avif 1600w
+                  "
+                />
 
-                    <source
-                      media="(min-width: 751px) and (max-width: 1020px) and (orientation: portrait)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.09.05_caterpillar-vertical-600p.d6e4fcd9.jpg                      "
-                    />
+                <!-- CATERPILLAR UP FENNEL-->
+                <img
+                  loading="lazy"
+                  src="imgs/insects-gal/jpg/Guneratne_2023.09.05_caterpillar-fennel-vertical-333w.bbc63d65.jpg"
+                  alt="Slide 4 of 12: A close up of the right side profile of a swallowtail butterfly caterpillar crawling vertically up a fennel stalk. The fennel rises vertically on the right side of the frame with its fronds sparsley spreading toward the left and right. The caterpillar is green with black stripes and yellow dots on every other black stripe. It's on the left-side of the fennel stalk with its legs clearly gripping the fennel stalk, and the front of its body slightly arced as it inches upwards."
+                  class="picture"
+                  tabindex="0"
+                  id="slide4"
+                  srcset="
+                    imgs/insects-gal/avif/Guneratne_2023.09.05_caterpillar-fennel-vertical-200w.bfeb3a3e.avif   200w,
+                    imgs/insects-gal/avif/Guneratne_2023.09.05_caterpillar-fennel-vertical-333w.796b94a0.avif   333w,
+                    imgs/insects-gal/avif/Guneratne_2023.09.05_caterpillar-fennel-vertical-500w.0387b227.avif   500w,
+                    imgs/insects-gal/avif/Guneratne_2023.09.05_caterpillar-fennel-vertical-1333w.8fb64e70.avif 1333w
+                  "
+                />
 
-                    <img
-                      src="images/insects-gal/Guneratne_2023.09.05_caterpillar-vertical-780p.dc181eee.jpg"
-                      alt="Slide 1 of 8: A close up of the right side profile of a swallowtail butterfly caterpillar crawling vertically up a fennel stalk. The fennel rises vertically on the right side of the frame with its fronds sparsley spreading toward the left and right. The caterpillar is green with black stripes and yellow dots on every other black stripe. It's on the left-side of the fennel stalk with its legs clearly gripping the fennel stalk, and the front of its body slightly arced as it inches upwards."
-                      id="slide1"
-                    />
-                  </picture>
+                <!-- BUTTERFLY -->
+                <img
+                  loading="lazy"
+                  src="imgs/insects-gal/jpg/Guneratne_2023.08.09_butterfly-horizontal-500w.5fed37d8.jpg"
+                  alt="Slide 5 of 12: A bright yellow eastern tiger swallowtail butterfly with black stripes sits on top of a purple thistle flower."
+                  class="picture"
+                  tabindex="0"
+                  id="slide5"
+                  srcset="
+                    imgs/insects-gal/avif/Guneratne_2023.08.09_butterfly-horizontal-300w.e1ce4624.avif   300w,
+                    imgs/insects-gal/avif/Guneratne_2023.08.09_butterfly-horizontal-500w.b9dc2107.avif   500w,
+                    imgs/insects-gal/avif/Guneratne_2023.08.09_butterfly-horizontal-750w.a1d84263.avif   750w,
+                    imgs/insects-gal/avif/Guneratne_2023.08.09_butterfly-horizontal-2000w.37b02046.avif 2000w
+                  "
+                />
 
-                  <!-- BEE ON SAGE FLOWER -->
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 300px) and (max-width: 499px) and (orientation: portrait)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.06.09_bee-vertical-250p.62cc1660.jpg                      "
-                    />
+                <!-- BEE ON CONE FLOWER -->
+                <img
+                  loading="lazy"
+                  src="imgs/insects-gal/jpg/Guneratne_2024.08.04_bee-cone-flower-vertical-357w.90857aa9.jpg"
+                  alt="Slide 6 of 12: Three purple cone flowers against a light green background, with the front-most flower slightly out of focus, and the background flower in focus with a bee sitting on top, gathering pollen."
+                  class="picture"
+                  tabindex="0"
+                  id="slide6"
+                  srcset="
+                    imgs/insects-gal/avif/Guneratne_2024.08.04_bee-cone-flower-vertical-214w.6a3ae1a0.avif   214w,
+                    imgs/insects-gal/avif/Guneratne_2024.08.04_bee-cone-flower-vertical-357w.40a49d37.avif   357w,
+                    imgs/insects-gal/avif/Guneratne_2024.08.04_bee-cone-flower-vertical-536w.98bde665.avif   536w,
+                    imgs/insects-gal/avif/Guneratne_2024.08.04_bee-cone-flower-vertical-1429w.df2f99a4.avif 1429w
+                  "
+                />
 
-                    <source
-                      media="(min-width: 500px) and (max-width: 750px) and (orientation: portrait)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.06.09_bee-vertical-420p.d5b3a34f.jpg                      "
-                    />
+                <!-- CATERPILLAR PARSLEY FACING DOWN -->
+                <img
+                  loading="lazy"
+                  src="imgs/insects-gal/jpg/Guneratne_2024.07.30_caterpillar-parsley-down-vertical-333w.c76d6ac2.jpg"
+                  alt="Slide 7 of 12: A closeup of a parsley stem and leaf entering the frame from the bottom right, moving up toward the top left of the frame, with a swallowtail butterfly caterpillar moving down the leaf toward the bottom of the frame. The caterpillar has black and white stripes with yellow dots and black pointy spines on every other black stripe."
+                  class="picture"
+                  tabindex="0"
+                  id="slide7"
+                  srcset="
+                    imgs/insects-gal/avif/Guneratne_2024.07.30_caterpillar-parsley-down-vertical-200w.63662eb2.avif   200w,
+                    imgs/insects-gal/avif/Guneratne_2024.07.30_caterpillar-parsley-down-vertical-333w.03678de5.avif   333w,
+                    imgs/insects-gal/avif/Guneratne_2024.07.30_caterpillar-parsley-down-vertical-500w.20c5ff71.avif   500w,
+                    imgs/insects-gal/avif/Guneratne_2024.07.30_caterpillar-parsley-down-vertical-1333w.ae25bd5b.avif 1333w
+                  "
+                />
 
-                    <source
-                      media="(min-width: 751px) and (max-width: 1020px) and (orientation: portrait)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.06.09_bee-vertical-600p.eddf1a48.jpg                      "
-                    />
+                <!-- DRAGONFLY -->
+                <img
+                  loading="lazy"
+                  src="imgs/insects-gal/jpg/Guneratne_2023.08.02_amberwing-horizontal-500w.781f4eda.jpg"
+                  alt="Slide 8 of 12: An eastern amberwing dragonfly sits on the branch of a cotoneaster plant, facing right in the frame and glancing toward the viewer."
+                  class="picture"
+                  tabindex="0"
+                  id="slide8"
+                  srcset="
+                    imgs/insects-gal/avif/Guneratne_2023.08.02_amberwing-horizontal-300w.76088c8a.avif   300w,
+                    imgs/insects-gal/avif/Guneratne_2023.08.02_amberwing-horizontal-500w.3168a075.avif   500w,
+                    imgs/insects-gal/avif/Guneratne_2023.08.02_amberwing-horizontal-750w.6f61681e.avif   750w,
+                    imgs/insects-gal/avif/Guneratne_2023.08.02_amberwing-horizontal-2000w.1de7acfa.avif 2000w
+                  "
+                />
 
-                    <img
-                      src="images/insects-gal/Guneratne_2023.06.09_bee-vertical-780p.b3622442.jpg"
-                      alt="Slide 2 of 8: A bee sitting on a purple sage flower with its arms over its head, as if about to thrust its arms forward into the flower."
-                      id="slide2"
-                    />
-                  </picture>
+                <!-- CATERPILLAR PARSLEY FACING UP -->
+                <img
+                  loading="lazy"
+                  src="imgs/insects-gal/jpg/Guneratne_2024.07.30_caterpillar-parsley-vertical-333w.7509b9d2.jpg"
+                  alt="Slide 9 of 12: A close up of the left profile view of a swallowtail butterfly caterpillar crawling up the stem of a parsley leaf. The parsley leaf enters the frame from the bottom center with the mostly out-of-focus leaf curling toward the left side of the frame. The caterpillar has black and white stripes with yellow dots and black pointy spines on every other black stripe. The front of its body is slightly arced as it inches up the leaf."
+                  class="picture"
+                  tabindex="0"
+                  id="slide9"
+                  srcset="
+                    imgs/insects-gal/avif/Guneratne_2024.07.30_caterpillar-parsley-vertical-200w.4496a183.avif   200w,
+                    imgs/insects-gal/avif/Guneratne_2024.07.30_caterpillar-parsley-vertical-333w.dde5cd26.avif   333w,
+                    imgs/insects-gal/avif/Guneratne_2024.07.30_caterpillar-parsley-vertical-500w.4b64e480.avif   500w,
+                    imgs/insects-gal/avif/Guneratne_2024.07.30_caterpillar-parsley-vertical-1333w.97dc9411.avif 1333w
+                  "
+                />
 
-                  <!-- ANT -->
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 300px) and (max-width: 499px) and (orientation: portrait)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.06.09_ant-leaf-vertical-250p.14edb166.jpg                      "
-                    />
+                <!-- BEE ON ASTER FLOWER -->
+                <img
+                  loading="lazy"
+                  src="imgs/insects-gal/jpg/Guneratne_2023.10.01_bee-aster-horizontal-500w.1c9ab2da.jpg"
+                  alt="Slide 10 of 12: A branch of small aster flowers enters the frame from the left, which are mostly out of focus. At the end of the branch, about three three-quarters of the way toward the right of the frame, a bumble bee sits on a flower. The bee is facing toward the viewer with its head down toward the flower. The yellow fuzz on the bee's back is clearly visible with its wings pointing up toward the sky."
+                  class="picture"
+                  tabindex="0"
+                  id="slide10"
+                  srcset="
+                    imgs/insects-gal/avif/Guneratne_2023.10.01_bee-aster-horizontal-300w.6f78bfee.avif   300w,
+                    imgs/insects-gal/avif/Guneratne_2023.10.01_bee-aster-horizontal-500w.ff4f0d2e.avif   500w,
+                    imgs/insects-gal/avif/Guneratne_2023.10.01_bee-aster-horizontal-750w.7cb974d2.avif   750w,
+                    imgs/insects-gal/avif/Guneratne_2023.10.01_bee-aster-horizontal-2000w.3e73785b.avif 2000w
+                  "
+                />
 
-                    <source
-                      media="(min-width: 500px) and (max-width: 750px) and (orientation: portrait)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.06.09_ant-leaf-vertical-420p.cc539fb3.jpg                      "
-                    />
+                <!-- CATERPILLAR ON DILL-->
 
-                    <source
-                      media="(min-width: 751px) and (max-width: 1020px) and (orientation: portrait)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.06.09_ant-leaf-vertical-600p.f4284d8c.jpg                      "
-                    />
+                <img
+                  loading="lazy"
+                  src="imgs/insects-gal/jpg/Guneratne_2023.09.05_caterpillar-dill-horizontal-500w.e0845b4b.jpg"
+                  alt="Slide 11 of 12: A close up of a swallowtail butterfly caterpillar on the horizontal branch of a dill plant, feeding on the flower at the end. The caterpillar is green with black stripes and yellow dots on every other stripe."
+                  class="picture"
+                  tabindex="0"
+                  id="slide11"
+                  srcset="
+                    imgs/insects-gal/avif/Guneratne_2023.09.05_caterpillar-dill-horizontal-300w.50d6eb2c.avif   300w,
+                    imgs/insects-gal/avif/Guneratne_2023.09.05_caterpillar-dill-horizontal-500w.4baa5fd1.avif   500w,
+                    imgs/insects-gal/avif/Guneratne_2023.09.05_caterpillar-dill-horizontal-750w.849ca0bb.avif   750w,
+                    imgs/insects-gal/avif/Guneratne_2023.09.05_caterpillar-dill-horizontal-2000w.53873acd.avif 2000w
+                  "
+                />
 
-                    <img
-                      src="images/insects-gal/Guneratne_2023.06.09_ant-leaf-vertical-780p.15f3b724.jpg"
-                      alt="Slide 3 of 8: A black ant crawls toward the left side of a large green leaf with serrated edges that is pointing vertically toward the top of the frame. The majority of the frame is filled with light and dark green serrated leaves from the plant."
-                      id="slide3"
-                    />
-                  </picture>
-
-                  <!-- CATERPILLAR PARSLEY FACING DOWN -->
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 300px) and (max-width: 499px) and (orientation: portrait)"
-                      srcset="
-                        images/insects-gal/Guneratne_2024.07.30_caterpillar-parsley-down-vertical-280p.ca0ec927.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 500px) and (max-width: 750px) and (orientation: portrait)"
-                      srcset="
-                        images/insects-gal/Guneratne_2024.07.30_caterpillar-parsley-down-vertical-420p.9a3e8204.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 751px) and (max-width: 1020px) and (orientation: portrait)"
-                      srcset="
-                        images/insects-gal/Guneratne_2024.07.30_caterpillar-parsley-down-vertical-600p.c76cdb28.jpg                      "
-                    />
-
-                    <img
-                      src="images/insects-gal/Guneratne_2024.07.30_caterpillar-parsley-down-vertical-780p.23fc5453.jpg"
-                      alt="Slide 4 of 8: A close up of a swallowtail butterfly caterpillar crawling down the edge of a parsley leaf toward the bottom of the frame. The parsley leaf enters the frame from the bottom right and moves diagonally up toward the left corner, taking up a large portion of the frame. The caterpillar has black and white stripes with yellow dots on every other black stripe, and the viewer sees its back from above as it moves downward."
-                      id="slide4"
-                    />
-                  </picture>
-
-                  <!-- BUTTERFLY -->
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 300px) and (max-width: 499px) and (orientation: portrait)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.08.09_butterfly-vertical-250p.0ea38491.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 500px) and (max-width: 750px) and (orientation: portrait)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.08.09_butterfly-vertical-420p.5c4f8af6.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 751px) and (max-width: 1020px) and (orientation: portrait)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.08.09_butterfly-vertical-600p.b823acb1.jpg                      "
-                    />
-
-                    <img
-                      src="images/insects-gal/Guneratne_2023.08.09_butterfly-vertical-780p.75ad807a.jpg"
-                      alt="Slide 5 of 8: A bright yellow eastern tiger swallowtail butterfly with black stripes sits on top of a purple thistle flower."
-                      id="slide5"
-                    />
-                  </picture>
-
-                  <!-- GRASSHOPPER -->
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 300px) and (max-width: 499px) and (orientation: portrait)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.08.26_grasshopper-vertical-250p.11ce908e.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 500px) and (max-width: 750px) and (orientation: portrait)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.08.26_grasshopper-vertical-420p.a925e95b.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 751px) and (max-width: 1020px) and (orientation: portrait)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.08.26_grasshopper-vertical-600p.41b098d8.jpg                      "
-                    />
-
-                    <img
-                      src="images/insects-gal/Guneratne_2023.08.26_grasshopper-vertical-780p.fa466430.jpg"
-                      alt="Slide 6 of 8: A closeup of a grasshopper sitting on a serrated leaf facing upward toward the right at a diagonal angle in the frame."
-                      id="slide6"
-                    />
-                  </picture>
-
-                  <!-- CATERPILLAR PARSLEY FACING UP -->
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 300px) and (max-width: 499px) and (orientation: portrait)"
-                      srcset="
-                        images/insects-gal/Guneratne_2024.07.30_caterpillar-parsley-up-vertical-250p.d4b5ca9b.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 500px) and (max-width: 750px) and (orientation: portrait)"
-                      srcset="
-                        images/insects-gal/Guneratne_2024.07.30_caterpillar-parsley-up-vertical-420p.af3df942.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 751px) and (max-width: 1020px) and (orientation: portrait)"
-                      srcset="
-                        images/insects-gal/Guneratne_2024.07.30_caterpillar-parsley-up-vertical-600p.ee3dd1ab.jpg                      "
-                    />
-
-                    <img
-                      src="images/insects-gal/Guneratne_2024.07.30_caterpillar-parsley-up-vertical-780p.4c6bc8ca.jpg"
-                      alt="Slide 7 of 8: A close up of the left profile view of a swallowtail butterfly caterpillar crawling up the stem of a parsley leaf. The parsley leaf enters the frame from the bottom center with the mostly out-of-focus leaf curling toward the left side of the frame. The caterpillar has black and white stripes with yellow dots and black pointy spines on every other black stripe. The front of its body is slightly arced as it inches up the leaf."
-                      id="slide7"
-                    />
-                  </picture>
-
-                  <!-- BEE ON CONE FLOWER -->
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 300px) and (max-width: 499px) and (orientation: portrait)"
-                      srcset="
-                        images/insects-gal/Guneratne_2024.08.04_bee-cone-flower-vertical-250p.7b4c7d23.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 500px) and (max-width: 750px) and (orientation: portrait)"
-                      srcset="
-                        images/insects-gal/Guneratne_2024.08.04_bee-cone-flower-vertical-420p.0d5d043c.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 751px) and (max-width: 1020px) and (orientation: portrait)"
-                      srcset="
-                        images/insects-gal/Guneratne_2024.08.04_bee-cone-flower-vertical-600p.08ee5da4.jpg                      "
-                    />
-
-                    <img
-                      src="images/insects-gal/Guneratne_2024.08.04_bee-cone-flower-vertical-780p.b219fd85.jpg"
-                      alt="Slide 8 of 8: Three purple cone flowers against a light green background, with the front-most flower slightly out of focus, and the background flower in focus with a bee sitting on top, gathering pollen."
-                      id="slide8"
-                    />
-                  </picture>
-                </div>
-
-                <button type="button" class="forward-arrow" data-forward-arrow>
-                  <img
-                    data-icon-forward
-                    class="arrow"
-                    src="images/icons/reshot-icon-arrow-chevron-right-WDGHUKQ634.15e2fc11.svg"
-                    alt="Forward Arrow"
-                  />
-                </button>
+                <!-- GRASSHOPPER -->
+                <img
+                  loading="lazy"
+                  src="imgs/insects-gal/jpg/Guneratne_2023.08.26_grasshopper-horizontal-500w.669a4064.jpg"
+                  alt="Slide 12 of 12: A closeup of a grasshopper sitting on a serrated leaf parallel to the long edge of the frame, facing right."
+                  class="picture"
+                  tabindex="0"
+                  id="slide12"
+                  srcset="
+                    imgs/insects-gal/avif/Guneratne_2023.08.26_grasshopper-horizontal-300w.1df9f076.avif   300w,
+                    imgs/insects-gal/avif/Guneratne_2023.08.26_grasshopper-horizontal-500w.6928abda.avif   500w,
+                    imgs/insects-gal/avif/Guneratne_2023.08.26_grasshopper-horizontal-750w.f15e5efa.avif   750w,
+                    imgs/insects-gal/avif/Guneratne_2023.08.26_grasshopper-horizontal-2000w.f3256dc7.avif 2000w
+                  "
+                />
               </div>
+
+              <button type="button" class="forward-arrow" data-forward-arrow>
+                <img
+                  data-icon-forward
+                  class="arrow"
+                  src="imgs/icons/reshot-icon-arrow-chevron-right-WDGHUKQ634.15e2fc11.svg"
+                  alt="Forward Arrow"
+                />
+              </button>
 
               <div class="img-dots-container">
                 <div class="img-dots">
@@ -386,7 +386,7 @@
                     type="button"
                     class="circle-icon-div"
                     data-circle="0"
-                    aria-label="Select Slide 1 of 8."
+                    aria-label="Select Slide 1 of 12."
                   >
                     <div class="circle-icon" data-circle="0"></div>
                   </button>
@@ -395,7 +395,7 @@
                     type="button"
                     class="circle-icon-div"
                     data-circle="1"
-                    aria-label="Select Slide 2 of 8."
+                    aria-label="Select Slide 2 of 12."
                   >
                     <div class="circle-icon" data-circle="1"></div>
                   </button>
@@ -404,7 +404,7 @@
                     type="button"
                     class="circle-icon-div"
                     data-circle="2"
-                    aria-label="Select Slide 3 of 8."
+                    aria-label="Select Slide 3 of 12."
                   >
                     <div class="circle-icon" data-circle="2"></div>
                   </button>
@@ -413,7 +413,7 @@
                     type="button"
                     class="circle-icon-div"
                     data-circle="3"
-                    aria-label="Select Slide 4 of 8."
+                    aria-label="Select Slide 4 of 12."
                   >
                     <div class="circle-icon" data-circle="3"></div>
                   </button>
@@ -422,7 +422,7 @@
                     type="button"
                     class="circle-icon-div"
                     data-circle="4"
-                    aria-label="Select Slide 5 of 8."
+                    aria-label="Select Slide 5 of 12."
                   >
                     <div class="circle-icon" data-circle="4"></div>
                   </button>
@@ -431,7 +431,7 @@
                     type="button"
                     class="circle-icon-div"
                     data-circle="5"
-                    aria-label="Select Slide 6 of 8."
+                    aria-label="Select Slide 6 of 12."
                   >
                     <div class="circle-icon" data-circle="5"></div>
                   </button>
@@ -440,7 +440,7 @@
                     type="button"
                     class="circle-icon-div"
                     data-circle="6"
-                    aria-label="Select Slide 7 of 8."
+                    aria-label="Select Slide 7 of 12."
                   >
                     <div class="circle-icon" data-circle="6"></div>
                   </button>
@@ -449,332 +449,45 @@
                     type="button"
                     class="circle-icon-div"
                     data-circle="7"
-                    aria-label="Select Slide 8 of 8."
+                    aria-label="Select Slide 8 of 12."
                   >
                     <div class="circle-icon" data-circle="7"></div>
                   </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
-        <section class="section gal-landscape" id="insects-gallery" hidden>
-          <div class="gallery landscape-gallery">
-            <div class="animation-ctrl-div landscape-animation-ctrl-div">
-  <button
-    type="button"
-    class="pause-btn landscape-pause-btn"
-    title="Press Enter or Space to Pause Gallery Animation"
-  >
-    <img
-      class="pause-icon landscape-pause-icon"
-      src="images/icons/pause-btn.ff0eedcb.svg"
-      alt="Press Enter or Space to Pause Gallery Animation"
-    />
-  </button>
-
-  <button
-    type="button"
-    class="play-btn landscape-play-btn"
-    title="Press Enter or Space to Start Gallery Animation"
-  >
-    <img
-      class="play-icon landscape-play-icon"
-      src="images/icons/play-btn.75224a2a.svg"
-      title="Start Gallery Animation"
-      alt="Press Enter or Space to Start Gallery Animation"
-    />
-  </button>
-</div>
-
-
-            <div
-              class="slider-box landscape-slider-box"
-              tabindex="0"
-              role="region"
-              aria-roledescription="photo slider"
-              aria-label="Insects Gallery"
-              hidden
-            >
-              <div class="img-display-container">
-                <button type="button" class="back-arrow" data-back-arrow>
-                  <img
-                    data-icon-back
-                    class="arrow"
-                    src="images/icons/reshot-icon-arrow-chevron-left-975UQXVKZF.066aee6a.svg"
-                    alt="Back Arrow"
-                  />
-                </button>
-
-                <div class="photo-box landscape-photo-box">
-                  <!-- BEE ON SAGE FLOWER -->
-                  <picture
-                    class="picture"
-                    aria-labelledby="slide1"
-                    tabindex="0"
-                  >
-                    <source
-                      media="(min-width: 640px) and (max-width: 959px) and (orientation: landscape)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.06.09_bee-horizontal-280p.8af6f889.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 960px) and (max-width: 1279px) and (orientation: landscape)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.06.09_bee-horizontal-460p.a63ff0f6.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 1280px) and (max-width: 1599px) and (orientation: landscape)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.06.09_bee-horizontal-600p.2c19d81b.jpg                      "
-                    />
-
-                    <img
-                      src="images/insects-gal/Guneratne_2023.06.09_bee-horizontal-900p.81c06a2d.jpg"
-                      alt="Slide 1 of 7: A bee hovering in flight in front of a purple sage flower with its head looking inside of it."
-                      id="slide1"
-                    />
-                  </picture>
-
-                  <!-- CATERPILLAR -->
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 640px) and (max-width: 959px) and (orientation: landscape)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.09.05_caterpillar-horizontal-280p.7acb6bb0.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 960px) and (max-width: 1279px) and (orientation: landscape)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.09.05_caterpillar-horizontal-460p.3139f1bb.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 1280px) and (max-width: 1599px) and (orientation: landscape)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.09.05_caterpillar-horizontal-600p.844f6f7e.jpg                      "
-                    />
-
-                    <img
-                      src="images/insects-gal/Guneratne_2023.09.05_caterpillar-horizontal-900p.45f1d787.jpg"
-                      alt="Slide 2 of 7: A close up of a swallowtail butterfly caterpillar on the horizontal branch of a dill plant, feeding on the flower at the end. The caterpillar is green with black stripes and yellow dots on every other stripe."
-                      id="slide2"
-                    />
-                  </picture>
-
-                  <!-- DRAGONFLY -->
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 640px) and (max-width: 959px) and (orientation: landscape)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.08.02_dragonfly-horizontal-280p.20399e66.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 960px) and (max-width: 1279px) and (orientation: landscape)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.08.02_dragonfly-horizontal-460p.7b4e53f4.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 1280px) and (max-width: 1599px) and (orientation: landscape)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.08.02_dragonfly-horizontal-600p.e5c1762e.jpg                      "
-                    />
-
-                    <img
-                      src="images/insects-gal/Guneratne_2023.08.02_dragonfly-horizontal-900p.095374e8.jpg"
-                      alt="Slide 3 of 7: An eastern amberwing dragonfly sits on the branch of a cotoneaster plant, facing right in the frame and glancing toward the viewer."
-                      id="slide3"
-                    />
-                  </picture>
-
-                  <!-- BEE ON ASTER FLOWER -->
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 640px) and (max-width: 959px) and (orientation: landscape)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.10.01_aster-bee-horizontal-280p.386bc2c2.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 960px) and (max-width: 1279px) and (orientation: landscape)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.10.01_aster-bee-horizontal-460p.c1126f7d.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 1280px) and (max-width: 1599px) and (orientation: landscape)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.10.01_aster-bee-horizontal-600p.1ff26eb6.jpg                      "
-                    />
-
-                    <img
-                      src="images/insects-gal/Guneratne_2023.10.01_aster-bee-horizontal-900p.75ac821d.jpg"
-                      alt="Slide 4 of 7: A branch of small aster flowers enters the frame from the left, which are mostly out of focus. At the end of the branch, about 3/4 of the way toward the right of the frame, a bumble bee sits on a flower. The bee is facing toward the viewer with its head down toward the flower. The yellow fuzz on the bee's back is clearly visible with its wings pointing up toward the sky."
-                      id="slide4"
-                    />
-                  </picture>
-
-                  <!-- BUTTERFLY -->
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 640px) and (max-width: 959px) and (orientation: landscape)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.08.09_butterfly-horizontal-280p.c6c0412a.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 960px) and (max-width: 1279px) and (orientation: landscape)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.08.09_butterfly-horizontal-460p.560c7fb8.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 1280px) and (max-width: 1599px) and (orientation: landscape)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.08.09_butterfly-horizontal-600p.860be179.jpg                      "
-                    />
-
-                    <img
-                      src="images/insects-gal/Guneratne_2023.08.09_butterfly-horizontal-900p.2953d114.jpg"
-                      alt="Slide 5 of 7: A bright yellow eastern tiger swallowtail butterfly with black stripes sits on top of a purple thistle flower."
-                      id="slide5"
-                    />
-                  </picture>
-
-                  <!-- CATERPILLAR ON PARSLEY -->
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 640px) and (max-width: 959px) and (orientation: landscape)"
-                      srcset="
-                        images/insects-gal/Guneratne_2024.07.30_caterpillar-parsley-horizontal-280p.211c2de6.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 960px) and (max-width: 1279px) and (orientation: landscape)"
-                      srcset="
-                        images/insects-gal/Guneratne_2024.07.30_caterpillar-parsley-horizontal-460p.aaeaa477.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 1280px) and (max-width: 1599px) and (orientation: landscape)"
-                      srcset="
-                        images/insects-gal/Guneratne_2024.07.30_caterpillar-parsley-horizontal-600p.03345db9.jpg                      "
-                    />
-
-                    <img
-                      src="images/insects-gal/Guneratne_2024.07.30_caterpillar-parsley-horizontal-900p.ce1b8b2f.jpg"
-                      alt="Slide 6 of 7: A close up of a swallowtail butterfly caterpillar crawling down the center of a parsley leaf toward the bottom right of the frame. The parsley leaf enters the frame from the center left and moves diagonally up toward the bottom right corder corner and spreading through the whole frame. The caterpillar has black and white stripes with yellow dots on every other black stripe, and the viewer sees its back and right side profile from above as it moves downward."
-                      id="slide6"
-                    />
-                  </picture>
-
-                  <!-- GRASSHOPPER -->
-                  <picture class="picture" tabindex="0">
-                    <source
-                      media="(min-width: 640px) and (max-width: 959px) and (orientation: landscape)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.08.26_grasshopper-horizontal-280p.42f74e6f.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 960px) and (max-width: 1279px) and (orientation: landscape)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.08.26_grasshopper-horizontal-460p.fa976b38.jpg                      "
-                    />
-
-                    <source
-                      media="(min-width: 1280px) and (max-width: 1599px) and (orientation: landscape)"
-                      srcset="
-                        images/insects-gal/Guneratne_2023.08.26_grasshopper-horizontal-600p.63d21df2.jpg                      "
-                    />
-
-                    <img
-                      src="images/insects-gal/Guneratne_2023.08.26_grasshopper-horizontal-900p.035580ea.jpg"
-                      alt="Slide 7 of 7: A closeup of a grasshopper sitting on a serrated leaf parallel to the long edge of the frame, facing right."
-                      id="slide7"
-                    />
-                  </picture>
-                </div>
-
-                <button type="button" class="forward-arrow" data-forward-arrow>
-                  <img
-                    data-icon-forward
-                    class="arrow"
-                    src="images/icons/reshot-icon-arrow-chevron-right-WDGHUKQ634.15e2fc11.svg"
-                    alt="Forward Arrow"
-                  />
-                </button>
-              </div>
-
-              <div class="img-dots-container">
-                <div class="img-dots">
                   <button
                     type="button"
                     class="circle-icon-div"
-                    data-circle="0"
-                    aria-label="Select Slide 1 of 7."
+                    data-circle="8"
+                    aria-label="Select Slide 9 of 12."
                   >
-                    <div class="circle-icon" data-circle="0"></div>
+                    <div class="circle-icon" data-circle="8"></div>
                   </button>
 
                   <button
                     type="button"
                     class="circle-icon-div"
-                    data-circle="1"
-                    aria-label="Select Slide 2 of 7."
+                    data-circle="9"
+                    aria-label="Select Slide 10 of 12."
                   >
-                    <div class="circle-icon" data-circle="1"></div>
+                    <div class="circle-icon" data-circle="9"></div>
                   </button>
 
                   <button
                     type="button"
                     class="circle-icon-div"
-                    data-circle="2"
-                    aria-label="Select Slide 3 of 7."
+                    data-circle="10"
+                    aria-label="Select Slide 11 of 12."
                   >
-                    <div class="circle-icon" data-circle="2"></div>
+                    <div class="circle-icon" data-circle="10"></div>
                   </button>
 
                   <button
                     type="button"
                     class="circle-icon-div"
-                    data-circle="3"
-                    aria-label="Select Slide 4 of 7."
+                    data-circle="11"
+                    aria-label="Select Slide 12 of 12."
                   >
-                    <div class="circle-icon" data-circle="3"></div>
-                  </button>
-
-                  <button
-                    type="button"
-                    class="circle-icon-div"
-                    data-circle="4"
-                    aria-label="Select Slide 5 of 7."
-                  >
-                    <div class="circle-icon" data-circle="4"></div>
-                  </button>
-
-                  <button
-                    type="button"
-                    class="circle-icon-div"
-                    data-circle="5"
-                    aria-label="Select Slide 6 of 7."
-                  >
-                    <div class="circle-icon" data-circle="5"></div>
-                  </button>
-
-                  <button
-                    type="button"
-                    class="circle-icon-div"
-                    data-circle="6"
-                    aria-label="Select Slide 7 of 7."
-                  >
-                    <div class="circle-icon" data-circle="6"></div>
+                    <div class="circle-icon" data-circle="11"></div>
                   </button>
                 </div>
               </div>
@@ -793,7 +506,7 @@
       rel="noopener noreferrer"
     >
       <img
-        src="images/icons/github-mark.6fa18895.svg"
+        src="imgs/icons/github-mark.6fa18895.svg"
         alt="GitHub Logo: Click to visit GitHub repository for this site."
         class="github-logo"
       />
