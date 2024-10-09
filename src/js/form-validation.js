@@ -1,5 +1,6 @@
 import {
   formDisabledText,
+  activeFormLink,
   form,
   formFieldset,
   inputFields,
@@ -18,9 +19,10 @@ import {
 } from "./variables";
 
 export function validateFormFields() {
-  if (shortPageName === "contact" && formFieldset.disabled) {
+  if (formFieldset.disabled) {
     // Adjust styles to show form is disabled
     formDisabledText.style.display = "initial";
+    activeFormLink.style.display = "initial";
 
     inputFields.forEach((field) => {
       field.style.backgroundColor = "#edf0f0";
@@ -32,7 +34,7 @@ export function validateFormFields() {
 
     submitBtn.style.backgroundColor = "#edf0f0";
     submitBtn.style.pointerEvents = "none";
-  } else if (shortPageName === "contact" && !formFieldset.disabled) {
+  } else if (!formFieldset.disabled) {
     // Validate form fields if form is not diabled
     validateFirstNameInput();
     validateLastNameInput();

@@ -32,6 +32,7 @@ export const menuLinks = document.querySelectorAll(".menu-link");
 
 // Contact Form Validation
 export const formDisabledText = document.querySelector(".form-disabled");
+export const activeFormLink = document.querySelector(".active-form-link");
 export const form = document.querySelector("#contact");
 export const formFieldset = document.querySelector("fieldset");
 export const inputFields = document.querySelectorAll("input");
