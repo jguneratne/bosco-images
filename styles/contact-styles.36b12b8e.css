@@ -9,10 +9,15 @@
   color: var(--dark-font-col);
 }
 
-.form-disabled {
+.form-disabled,
+.active-form-link {
   color: var(--error-color);
-  text-decoration: underline;
   display: none;
+}
+
+.active-form-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 form {
@@ -219,4 +224,4 @@ textarea::placeholder {
   }
 }
 
-/*# sourceMappingURL=contact-styles.0f8ef143.css.map*/
+/*# sourceMappingURL=contact-styles.36b12b8e.css.map*/

@@ -49,6 +49,15 @@
   margin-bottom: 1.2em;
 }
 
+.active-site-link {
+  color: var(--light-font-col);
+}
+
+.active-site-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 /* Media Queries */
 
 @media (min-width: 600px) and (orientation: portrait) {
@@ -146,4 +155,4 @@
   }
 }
 
-/*# sourceMappingURL=about-styles.5e6fc2be.css.map*/
+/*# sourceMappingURL=about-styles.8aa5161a.css.map*/
