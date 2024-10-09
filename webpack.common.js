@@ -11,7 +11,7 @@ module.exports = {
       // See babel documentation: https://github.com/babel/babel-loader
       arrowFunction: false,
     },
-    // crossOriginLoading: "anonymous", // required for subresource integrity to work See: https://dev.to/webdiscus/webpack-auto-generate-an-integrity-hash-for-link-and-script-tags-in-an-html-template-48p5
+    crossOriginLoading: "anonymous", // required for subresource integrity to work See: https://dev.to/webdiscus/webpack-auto-generate-an-integrity-hash-for-link-and-script-tags-in-an-html-template-48p5
   },
   resolve: {
     alias: {
@@ -89,7 +89,7 @@ module.exports = {
         // output filename for CSS
         filename: "styles/[name].[contenthash:8].css",
       },
-      //integrity: "auto", // include `integrity` attribute in production mode only
+      integrity: "auto", // include `integrity` attribute in production mode only
 
       preprocessor: "ejs",
       preprocessorOptions: {
